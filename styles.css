@@ -156,12 +156,13 @@ body {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: var(--space-4);
 }
 
 .nav-logo {
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
 }
 
 .nav-title {
