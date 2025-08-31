@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricko Privacy Guard - Free Privacy Protection</title>
+    <meta name="description" content="Free browser extension that blocks trackers, protects against fingerprinting, and manages cookies automatically. Beta release with premium features coming soon.">
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <img src="assets/logo.svg" alt="Pricko Privacy Guard" class="nav-logo">
+                    <span class="nav-title">Pricko Privacy Guard</span>
+                    <span class="beta-badge">Beta</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#download" class="nav-link">Download</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#support" class="nav-link">Support</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Take Control of Your 
+                        <span class="text-gradient">Digital Privacy</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Free browser extension that blocks trackers, protects against fingerprinting, 
+                        and manages cookies automatically
+                    </p>
+                    <div class="hero-badge">
+                        <span class="shield-icon">🛡️</span>
+                        <span>Now in Beta - Free for everyone while we develop token-powered premium features</span>
+                    </div>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-large" onclick="scrollToDownload()">
+                            Download for Chrome
+                        </button>
+                        <button class="btn btn-secondary btn-large" onclick="scrollToDownload()">
+                            Other Browsers
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Trackers Blocked</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Users Protected</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Free in Beta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">example.com</div>
+                            <div class="extension-icon active"></div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="protection-stats">
+                                <div class="stat-item">
+                                    <span class="stat-icon">🚫</span>
+                                    <span>15 Trackers Blocked</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🎭</span>
+                                    <span>Fingerprint Protected</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🍪</span>
+                                    <span>8 Cookies Managed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Features (Free in Beta)</h2>
+                <p class="section-subtitle">Comprehensive privacy protection that works automatically</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚫</div>
+                    <h3 class="feature-title">Advanced Tracker Blocking</h3>
+                    <p class="feature-description">
+                        Block analytics, advertising, and social media trackers across all websites
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3 class="feature-title">Fingerprint Protection</h3>
+                    <p class="feature-description">
+                        Spoof canvas, WebGL, audio fingerprints to prevent browser fingerprinting
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍪</div>
+                    <h3 class="feature-title">Smart Cookie Management</h3>
+                    <p class="feature-description">
+                        Automatically categorize and manage cookies with GDPR compliance
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Social Widget Blocking</h3>
+                    <p class="feature-description">
+                        Block Facebook, Twitter, and other social media tracking widgets
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Privacy protection in three simple steps</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Install the Extension</h3>
+                    <p class="step-description">One-click installation from your browser's extension store</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Automatic Protection</h3>
+                    <p class="step-description">Starts protecting immediately - no configuration needed</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">View Your Stats</h3>
+                    <p class="step-description">See blocked trackers, protected fingerprints, and managed cookies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy First -->
+    <section class="privacy-first">
+        <div class="container">
+            <div class="privacy-content">
+                <div class="privacy-text">
+                    <h2 class="section-title">Privacy First Design</h2>
+                    <div class="privacy-features">
+                        <div class="privacy-feature">
+                            <span class="feature-check">✅</span>
+                            <span><strong>No Data Collection</strong> - We don't collect, store, or sell your browsing data</span>
+                        </div>
+                        <div class="privacy-feature">
+                            <span class="feature-check">✅</span>
+                            <span><strong>Local Processing</strong> - All privacy protection happens on your device</span>
+                        </div>
+                        <div class="privacy-feature">
+                            <span class="feature-check">✅</span>
+                            <span><strong>Open Development</strong> - Transparent development with community involvement</span>
+                        </div>
+                        <div class="privacy-feature">
+                            <span class="feature-check">✅</span>
+                            <span><strong>Security Audited</strong> - Regular security reviews and vulnerability assessments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="privacy-visual">
+                    <div class="shield-graphic">
+                        <div class="shield-outer">
+                            <div class="shield-inner">
+                                <span class="shield-text">🛡️</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon -->
+    <section class="coming-soon">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Coming Soon: Premium Features</h2>
+                <p class="section-subtitle">Advanced privacy tools powered by Solana tokens</p>
+            </div>
+            <div class="premium-grid">
+                <div class="premium-card">
+                    <div class="premium-icon">🪙</div>
+                    <h3 class="premium-title">Token-Powered Access</h3>
+                    <p class="premium-description">Premium features unlocked through Solana tokens</p>
+                </div>
+                <div class="premium-card">
+                    <div class="premium-icon">📊</div>
+                    <h3 class="premium-title">Advanced Analytics</h3>
+                    <p class="premium-description">Detailed privacy insights and personalized reports</p>
+                </div>
+                <div class="premium-card">
+                    <div class="premium-icon">⚙️</div>
+                    <h3 class="premium-title">Custom Rules</h3>
+                    <p class="premium-description">Create your own blocking rules and filter lists</p>
+                </div>
+                <div class="premium-card">
+                    <div class="premium-icon">🏢</div>
+                    <h3 class="premium-title">Enterprise Features</h3>
+                    <p class="premium-description">Team management and advanced compliance tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Download Now</h2>
+                <p class="section-subtitle">Available for all major browsers</p>
+            </div>
+            <div class="browser-grid">
+                <div class="browser-card">
+                    <img src="assets/chrome-logo.svg" alt="Chrome" class="browser-logo">
+                    <h3 class="browser-name">Chrome</h3>
+                    <p class="browser-version">Version 88+</p>
+                    <button class="btn btn-primary">Add to Chrome</button>
+                    <span class="availability">Coming to Store Soon</span>
+                </div>
+                <div class="browser-card">
+                    <img src="assets/firefox-logo.svg" alt="Firefox" class="browser-logo">
+                    <h3 class="browser-name">Firefox</h3>
+                    <p class="browser-version">Version 91+</p>
+                    <button class="btn btn-primary">Add to Firefox</button>
+                    <span class="availability">Coming to Store Soon</span>
+                </div>
+                <div class="browser-card">
+                    <img src="assets/brave-logo.svg" alt="Brave" class="browser-logo">
+                    <h3 class="browser-name">Brave</h3>
+                    <p class="browser-version">Chromium-based</p>
+                    <button class="btn btn-secondary">Direct Download</button>
+                    <span class="availability">Available Now</span>
+                </div>
+            </div>
+            <div class="download-alternative">
+                <p>Need help installing? Check our <a href="install-guide.html" class="link">Installation Guide</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Is this really free?</h3>
+                    <p class="faq-answer">Yes! The Beta release is completely free while we develop premium token-gated features.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you collect my data?</h3>
+                    <p class="faq-answer">No. We don't collect, store, or sell your browsing data. All processing happens locally on your device.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What happens after Beta?</h3>
+                    <p class="faq-answer">Core privacy features remain free. Advanced features will require Solana tokens.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How long is the Beta period?</h3>
+                    <p class="faq-answer">Beta runs until our token launch, estimated for Q2 2025.</p>
+                </div>
+            </div>
+            <div class="faq-cta">
+                <p>More questions? <a href="faq.html" class="link">See full FAQ</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Community & Support</h2>
+                <p class="section-subtitle">Join our privacy-focused community</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">💬</div>
+                    <h3 class="support-title">Discord Community</h3>
+                    <p class="support-description">Join our community for support and discussions</p>
+                    <a href="https://discord.gg/pricko" class="btn btn-secondary">Join Discord</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">📧</div>
+                    <h3 class="support-title">Email Support</h3>
+                    <p class="support-description">Direct support for technical issues</p>
+                    <a href="mailto:support@pricko.com" class="btn btn-secondary">Contact Us</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">🐛</div>
+                    <h3 class="support-title">Bug Reports</h3>
+                    <p class="support-description">Report issues directly through GitHub</p>
+                    <a href="https://github.com/pricko/privacy-guard/issues" class="btn btn-secondary">Report Bug</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="Pricko Privacy Guard" class="footer-logo">
+                    <p class="footer-tagline">Built with ❤️ for privacy</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Product</h4>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#download" class="footer-link">Download</a>
+                        <a href="install-guide.html" class="footer-link">Installation</a>
+                        <a href="faq.html" class="footer-link">FAQ</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Support</h4>
+                        <a href="https://discord.gg/pricko" class="footer-link">Discord</a>
+                        <a href="mailto:support@pricko.com" class="footer-link">Email</a>
+                        <a href="https://github.com/pricko/privacy-guard" class="footer-link">GitHub</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Legal</h4>
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pricko Team. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
