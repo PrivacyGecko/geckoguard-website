@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Shield background -->
+  <path d="M24 5L38 12V22C38 31.5 32 40.5 24 43C16 40.5 10 31.5 10 22V12L24 5Z" fill="#1e293b" stroke="none"/>
+  
+  <!-- Inner shield -->
+  <path d="M24 8.5L34 14V21C34 28.5 29.5 35.5 24 38C18.5 35.5 14 28.5 14 21V14L24 8.5Z" fill="#3b82f6" stroke="none"/>
+  
+  <!-- Circular background for the mascot -->
+  <circle cx="24" cy="24" r="8" fill="white" opacity="0.95"/>
+  
+  <!-- Pricko mascot referenced from external file -->
+  <image x="16" y="16" width="16" height="16" href="pricko.png" />
+</svg>
