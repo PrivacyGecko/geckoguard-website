@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Brave shield -->
+  <path d="M32 4L54 12V26C54 38 44 50 32 60C20 50 10 38 10 26V12L32 4Z" fill="#fb542b"/>
+  
+  <!-- Inner shield -->
+  <path d="M32 8L48 14V26C48 36 40 46 32 54C24 46 16 36 16 26V14L32 8Z" fill="#ff6633"/>
+  
+  <!-- Brave lion -->
+  <circle cx="32" cy="28" r="12" fill="#fff"/>
+  <path d="M26 24C26 22 28 20 30 20C32 20 34 22 34 24V28C34 30 32 32 30 32C28 32 26 30 26 28V24Z" fill="#fb542b"/>
+  <path d="M30 24C30 22 32 20 34 20C36 20 38 22 38 24V28C38 30 36 32 34 32C32 32 30 30 30 28V24Z" fill="#fb542b"/>
+  
+  <!-- Mane -->
+  <path d="M20 20C22 18 26 16 30 18C34 16 38 18 40 20C42 22 44 26 42 30C40 34 36 36 32 36C28 36 24 34 22 30C20 26 22 22 24 20Z" fill="#ff9500"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Firefox background -->
+  <circle cx="32" cy="32" r="30" fill="#ff9500"/>
+  
+  <!-- Firefox fox -->
+  <path d="M50 20C48 12 40 8 32 8C20 8 12 16 10 26C8 30 8 34 10 38C12 48 20 56 32 56C44 56 52 48 54 38C56 34 56 30 54 26C54 24 52 22 50 20Z" fill="#ff6600"/>
+  
+  <!-- Inner fox shape -->
+  <path d="M32 12C42 12 48 18 50 26C52 30 52 34 50 38C48 46 42 52 32 52C22 52 16 46 14 38C12 34 12 30 14 26C16 18 22 12 32 12Z" fill="#ff3300"/>
+  
+  <!-- Fox head -->
+  <ellipse cx="32" cy="28" rx="16" ry="20" fill="#ffb366"/>
+  
+  <!-- Firefox styling -->
+  <path d="M20 24C20 20 24 16 28 16C32 16 36 20 36 24V32C36 36 32 40 28 40C24 40 20 36 20 32V24Z" fill="#ff6600"/>
+  <path d="M28 20C30 18 34 18 36 20C38 22 40 26 40 30C40 34 38 38 36 40C34 42 30 42 28 40C26 38 24 34 24 30C24 26 26 22 28 20Z" fill="#ff9500"/>
+</svg>
