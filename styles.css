@@ -206,7 +206,7 @@ body {
   background: var(--gradient-hero);
   color: white;
   padding: var(--space-20) 0 var(--space-16);
-  margin-top: 80px; /* Account for fixed nav */
+  margin-top: 56px; /* Account for fixed nav */
   overflow: hidden;
   position: relative;
 }
