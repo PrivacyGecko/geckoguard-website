@@ -150,7 +150,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-4) 0;
+  padding: var(--space-3) 0;
+  min-height: 64px;
 }
 
 .nav-brand {
@@ -160,11 +161,10 @@ body {
 }
 
 .nav-logo {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  shape-rendering: geometricPrecision;
 }
 
 .nav-title {
