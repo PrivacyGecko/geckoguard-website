@@ -115,7 +115,7 @@ Beta comes pre-configured for optimal protection:
 
 ### Get Help
 - **Discord**: [Gecko Guard Community](https://discord.gg/geckoguard) - Fastest support
-- **Email**: support@geckoguard.com - Technical issues
+- **Email**: support@geckoguard.app - Technical issues
 - **GitHub**: [Issues](https://github.com/gecko-guard/gecko-guard/issues) - Bug reports
 
 ### Before Contacting Support
