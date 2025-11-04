@@ -54,14 +54,14 @@ npx serve .
 - HTTPS enforced
 
 ### Domain
-- Primary: geckoguard.com
+- Primary: geckoguard.app
 - GitHub Pages: gecko-guard.github.io
 
 ## Contact Information
 
-- **Website**: https://geckoguard.com
+- **Website**: https://geckoguard.app
 - **GitHub**: https://github.com/gecko-guard/gecko-guard
-- **Email**: support@geckoguard.com
+- **Email**: support@geckoguard.app
 - **Discord**: https://discord.gg/geckoguard
 
 ## License

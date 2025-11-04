@@ -90,7 +90,7 @@ Try these steps:
 ### How do I report bugs?
 - **Discord**: [Gecko Guard Community](https://discord.gg/geckoguard) - Fastest response
 - **GitHub**: [Issues](https://github.com/gecko-guard/gecko-guard/issues) - Bug reports
-- **Email**: bugs@geckoguard.com - Technical issues
+- **Email**: bugs@geckoguard.app - Technical issues
 
 ### Can I contribute to development?
 We welcome community contributions! The extension will be open-source. Join our Discord for development discussions.
@@ -120,7 +120,7 @@ Premium access will be token-based, not subscription-based. Hold the required to
 
 ### How do I get help?
 1. **Discord Community**: [Join here](https://discord.gg/geckoguard) - Active community support
-2. **Email Support**: support@geckoguard.com - Technical issues
+2. **Email Support**: support@geckoguard.app - Technical issues
 3. **Documentation**: Check our installation and user guides
 
 ### What information should I include in bug reports?
