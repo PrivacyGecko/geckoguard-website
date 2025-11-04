@@ -1,4 +1,4 @@
-# Pricko Privacy Guard - Beta Release
+# Gecko Guard - Beta Release
 
 **Free privacy protection while we build premium features**
 
@@ -9,7 +9,7 @@
 *Free browser extension that blocks trackers, protects against fingerprinting, and manages cookies automatically*
 
 ### Subheadline
-🛡️ **Now in Beta** - Free for everyone while we develop token-powered premium features
+🛡️ **Now 100% Free Forever** - Free for everyone while we develop all features
 
 ### CTA Buttons
 - **Download for Chrome** - Primary button
@@ -18,7 +18,7 @@
 
 ---
 
-## Core Features (Free in Beta)
+## Core Features (Free 100% Free Forever)
 
 ### 🚫 Advanced Tracker Blocking
 Block analytics, advertising, and social media trackers across all websites
@@ -50,7 +50,7 @@ See blocked trackers, protected fingerprints, and managed cookies
 ## Beta Program Benefits
 
 ### ✅ Free Access
-All core privacy features completely free during Beta
+All core privacy features completely free forever
 
 ### 🔄 Regular Updates
 Active development with frequent feature additions
@@ -129,7 +129,7 @@ Suggest new features and improvements
 ## FAQ
 
 ### Is this really free?
-Yes! The Beta release is completely free while we develop premium token-gated features.
+Yes! The Production v1.0 is completely free while we develop production features.
 
 ### What happens after Beta?
 Core privacy features remain free. Advanced features will require Solana tokens.
@@ -137,8 +137,8 @@ Core privacy features remain free. Advanced features will require Solana tokens.
 ### Which tokens will be supported?
 We'll announce token details closer to the premium launch.
 
-### How long is the Beta period?
-Beta runs until our token launch (estimated Q2 2025).
+### How long is the production release?
+Beta runs until our production launch (estimated Q2 2025).
 
 ### Can I use this on mobile?
 Currently desktop browsers only. Mobile support planned for future releases.
@@ -147,12 +147,12 @@ Currently desktop browsers only. Mobile support planned for future releases.
 
 ## Footer
 
-**Pricko Privacy Guard Beta** - Built with ❤️ for privacy
+**Gecko Guard Beta** - Built with ❤️ for privacy
 
-*© 2024 Pricko Team. All rights reserved.*
+*© 2024 Gecko Guard Team. All rights reserved.*
 
 - [Privacy Policy](privacy.html)
 - [Terms of Service](terms.html)
-- [Contact](mailto:hello@pricko.com)
-- [Discord](https://discord.gg/pricko)
-- [GitHub](https://github.com/pricko/privacy-guard)
+- [Contact](mailto:hello@geckoguard.com)
+- [Discord](https://discord.gg/geckoguard)
+- [GitHub](https://github.com/gecko-guard/gecko-guard)

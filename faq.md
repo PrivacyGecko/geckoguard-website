@@ -1,18 +1,18 @@
-# Frequently Asked Questions - Pricko Privacy Guard Beta
+# Frequently Asked Questions - Gecko Guard Beta
 
 ## Beta Release
 
 ### Is this really free?
-**Yes!** The Beta release is completely free. All core privacy features are available at no cost while we develop premium token-gated features.
+**Yes!** The Production v1.0 is completely free. All core privacy features are available at no cost while we develop production features.
 
 ### How long will the Beta last?
-The Beta period runs until our token launch, estimated for Q2 2025. Core privacy features will remain free after Beta.
+The production release runs until our production launch, estimated for Q2 2025. Core privacy features will remain free after Beta.
 
 ### What happens to my settings after Beta?
 All your settings and preferences will be preserved when transitioning from Beta to the full release.
 
 ### Can I provide feedback?
-Absolutely! Join our [Discord community](https://discord.gg/pricko) or submit feedback through GitHub issues.
+Absolutely! Join our [Discord community](https://discord.gg/geckoguard) or submit feedback through GitHub issues.
 
 ---
 
@@ -88,9 +88,9 @@ Try these steps:
 4. Check browser console for errors
 
 ### How do I report bugs?
-- **Discord**: [Pricko Community](https://discord.gg/pricko) - Fastest response
-- **GitHub**: [Issues](https://github.com/pricko/privacy-guard/issues) - Bug reports
-- **Email**: bugs@pricko.com - Technical issues
+- **Discord**: [Gecko Guard Community](https://discord.gg/geckoguard) - Fastest response
+- **GitHub**: [Issues](https://github.com/gecko-guard/gecko-guard/issues) - Bug reports
+- **Email**: bugs@geckoguard.com - Technical issues
 
 ### Can I contribute to development?
 We welcome community contributions! The extension will be open-source. Join our Discord for development discussions.
@@ -119,8 +119,8 @@ Premium access will be token-based, not subscription-based. Hold the required to
 ## Support
 
 ### How do I get help?
-1. **Discord Community**: [Join here](https://discord.gg/pricko) - Active community support
-2. **Email Support**: support@pricko.com - Technical issues
+1. **Discord Community**: [Join here](https://discord.gg/geckoguard) - Active community support
+2. **Email Support**: support@geckoguard.com - Technical issues
 3. **Documentation**: Check our installation and user guides
 
 ### What information should I include in bug reports?
@@ -140,8 +140,8 @@ Premium access will be token-based, not subscription-based. Hold the required to
 
 ## Company
 
-### Who makes Pricko Privacy Guard?
-Pricko Privacy Guard is developed by the Pricko team, focused on building privacy-first tools for the decentralized web.
+### Who makes Gecko Guard?
+Gecko Guard is developed by the Gecko Guard team, focused on building privacy-first tools for the decentralized web.
 
 ### Where can I follow updates?
 - **Discord**: Real-time updates and community discussions
@@ -149,8 +149,8 @@ Pricko Privacy Guard is developed by the Pricko team, focused on building privac
 - **GitHub**: Technical updates and development progress
 
 ### How do you make money?
-Revenue comes from premium token-gated features. The core privacy protection remains free for everyone.
+Revenue comes from production features. The core privacy protection remains free for everyone.
 
 ---
 
-**Don't see your question? Join our [Discord community](https://discord.gg/pricko) and ask directly!**
+**Don't see your question? Join our [Discord community](https://discord.gg/geckoguard) and ask directly!**

@@ -1,4 +1,4 @@
-// Pricko Privacy Guard - Website JavaScript
+// Gecko Guard - Website JavaScript
 
 // =====================================================
 // Smooth Scrolling & Navigation
@@ -145,7 +145,7 @@ function handleNewsletterSignup(event) {
   console.log('Newsletter signup:', email);
   
   // Show success message
-  showNotification('Thanks! We\'ll notify you about the token launch.', 'success');
+  showNotification('Thanks! We\'ll notify you about the production launch.', 'success');
 }
 
 function showNotification(message, type = 'info') {

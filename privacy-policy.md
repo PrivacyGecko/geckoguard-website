@@ -1,14 +1,14 @@
-# Privacy Policy - Pricko Privacy Guard
+# Privacy Policy - Gecko Guard
 
 *Last updated: August 31, 2024*
 
 ## Introduction
 
-Pricko Privacy Guard ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our browser extension handles your data.
+Gecko Guard ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our browser extension handles your data.
 
 ## Core Principle: We Don't Collect Your Data
 
-**Pricko Privacy Guard is designed with privacy-first principles:**
+**Gecko Guard is designed with privacy-first principles:**
 - ✅ No tracking or analytics
 - ✅ No data collection or storage on our servers
 - ✅ All processing happens locally on your device
@@ -85,7 +85,7 @@ We will update this policy if our data practices change. Any updates will be pos
 
 ## Beta Release Notice
 
-During the Beta period:
+During the production release:
 - All features remain free and privacy-focused
 - No premium feature data collection
 - Policy may be updated as features are added
@@ -93,9 +93,9 @@ During the Beta period:
 ## Contact Us
 
 Questions about privacy? Contact us:
-- Email: privacy@pricko.com
-- Discord: [Pricko Community](https://discord.gg/pricko)
-- GitHub: [Privacy Guard Issues](https://github.com/pricko/privacy-guard/issues)
+- Email: privacy@geckoguard.com
+- Discord: [Gecko Guard Community](https://discord.gg/geckoguard)
+- GitHub: [Privacy Guard Issues](https://github.com/gecko-guard/gecko-guard/issues)
 
 ---
 
