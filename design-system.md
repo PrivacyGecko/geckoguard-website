@@ -1,9 +1,9 @@
-# Pricko Privacy Guard - Design System
+# Gecko Guard - Design System
 
 ## Brand Identity
 
 ### Logo & Brand Mark
-- **Primary Logo**: Pricko shield icon with "Privacy Guard" text
+- **Primary Logo**: Gecko Guard shield icon with "Privacy Guard" text
 - **Icon Only**: Shield with "P" or gecko mascot for compact spaces
 - **Beta Badge**: "Beta" tag to indicate early release status
 
@@ -242,4 +242,4 @@
 
 ---
 
-This design system creates a **professional, trustworthy, modern** appearance that elevates the Pricko brand while maintaining focus on privacy and security.
+This design system creates a **professional, trustworthy, modern** appearance that elevates the Gecko Guard brand while maintaining focus on privacy and security.

@@ -1,4 +1,4 @@
-# Installation Guide - Pricko Privacy Guard Beta
+# Installation Guide - Gecko Guard Beta
 
 ## Quick Installation
 
@@ -8,10 +8,10 @@
 1. Visit [Chrome Web Store](#) 
 2. Click "Add to Chrome"
 3. Confirm permissions
-4. Extension installed! Look for the Pricko icon in your toolbar
+4. Extension installed! Look for the Gecko Guard icon in your toolbar
 
 #### Option 2: Direct Install (Available Now)
-1. Download `pricko-privacy-guard-chrome.zip`
+1. Download `pricko-gecko-guard-chrome.zip`
 2. Unzip the file to a folder
 3. Open Chrome → Menu → More Tools → Extensions
 4. Enable "Developer mode" (top right)
@@ -28,7 +28,7 @@
 4. Extension installed!
 
 #### Option 2: Direct Install (Available Now)
-1. Download `pricko-privacy-guard-firefox.xpi`
+1. Download `pricko-gecko-guard-firefox.xpi`
 2. Open Firefox → Menu → Add-ons and Themes
 3. Click the gear icon → "Install Add-on From File"
 4. Select the downloaded `.xpi` file
@@ -41,7 +41,7 @@
 
 ### 1. Extension Activation
 - Extension activates automatically after installation
-- Look for the Pricko shield icon in your browser toolbar
+- Look for the Gecko Guard shield icon in your browser toolbar
 - Green icon = Protection active
 - Gray icon = Protection paused
 
@@ -63,7 +63,7 @@ Beta comes pre-configured for optimal protection:
 ## Verification Steps
 
 ### Check Installation Success
-1. Click the Pricko extension icon
+1. Click the Gecko Guard extension icon
 2. You should see the Beta welcome screen
 3. Visit any website - blocking should start immediately
 4. Check stats after browsing a few sites
@@ -99,7 +99,7 @@ Beta comes pre-configured for optimal protection:
 ## Updates
 
 ### Beta Updates
-- Updates distributed through direct download during Beta
+- Updates distributed through direct download forever
 - Check our website or Discord for new versions
 - Store versions will update automatically when available
 
@@ -114,9 +114,9 @@ Beta comes pre-configured for optimal protection:
 ## Support
 
 ### Get Help
-- **Discord**: [Pricko Community](https://discord.gg/pricko) - Fastest support
-- **Email**: support@pricko.com - Technical issues
-- **GitHub**: [Issues](https://github.com/pricko/privacy-guard/issues) - Bug reports
+- **Discord**: [Gecko Guard Community](https://discord.gg/geckoguard) - Fastest support
+- **Email**: support@geckoguard.com - Technical issues
+- **GitHub**: [Issues](https://github.com/gecko-guard/gecko-guard/issues) - Bug reports
 
 ### Before Contacting Support
 1. Check extension is latest version
@@ -142,11 +142,11 @@ Beta comes pre-configured for optimal protection:
 4. **Spread the word** - Share with privacy-conscious friends
 
 ### Prepare for Premium Launch
-- Join our Discord for token launch updates
+- Join our Discord for production launch updates
 - Follow development progress
 - Provide Beta feedback to shape premium features
 - Early Beta users get first access to premium features
 
 ---
 
-**Welcome to the Pricko Privacy Guard Beta! Your privacy protection starts now.** 🛡️
+**Welcome to the Gecko Guard Beta! Your privacy protection starts now.** 🛡️

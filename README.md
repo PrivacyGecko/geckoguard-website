@@ -1,59 +1,73 @@
-# Pricko Privacy Guard - Website Content
+# Gecko Guard - Website
 
-Website content for the Pricko Privacy Guard Beta release.
+Website content for Gecko Guard, a 100% free and open-source privacy protection browser extension.
 
 ## Content Files
 
 ### Core Pages
-- `landing-page.md` - Main landing page content with hero, features, and CTAs
-- `privacy-policy.md` - Comprehensive privacy policy for extension stores
+- `index.html` - Main landing page with hero, features, and CTAs
+- `privacy-policy.md` - Comprehensive privacy policy
 - `install-guide.md` - Step-by-step installation instructions for all browsers
-- `faq.md` - Frequently asked questions covering Beta, privacy, and features
+- `faq.md` - Frequently asked questions
+- `design-system.md` - Design guidelines and component documentation
 
 ### Key Messages
 
 #### Value Proposition
-- **Free privacy protection during Beta**
-- **No data collection - privacy-first design**
-- **Comprehensive protection**: trackers, fingerprinting, cookies, social widgets
-- **Premium features coming with token launch**
+- **100% Free & Open Source** - No hidden costs, complete transparency
+- **Privacy-First Design** - 8.8/10 privacy score (EXCELLENT)
+- **No Data Collection** - All processing happens locally
+- **Professional Quality** - Production-ready v1.0
 
-#### Beta Strategy
-- Build user base before token launch
-- Demonstrate value with free tier
-- Create anticipation for premium features
-- Gather feedback for product development
+#### Core Features
+1. **Block Trackers** - Block ads, analytics, and social media trackers
+2. **Spoof Fingerprint** - Randomize browser fingerprint to prevent device tracking
+3. **Block Tracking Cookies** - Auto-delete cookies that track you across sites
 
-### Technical Requirements
+## Technical Stack
 
-#### Extension Store Submissions
-- Privacy policy (✅ Created)
-- Installation guide (✅ Created)
-- Feature descriptions (✅ In landing page)
-- Support contact information (✅ Included)
+- **Static HTML/CSS/JS** - No build process required
+- **Modern CSS** - Custom properties, Grid, Flexbox
+- **Vanilla JavaScript** - No framework dependencies
+- **Privacy-First** - No external analytics or tracking
 
-#### Website Infrastructure Needed
-- Static site hosting (Vercel/Netlify recommended)
-- Domain setup (pricko.com or subdomain)
-- Basic analytics (optional for Beta)
-- Support system (Discord community)
+## Local Development
 
-### Next Steps for Website Launch
+```bash
+# Clone the repository
+git clone https://github.com/gecko-guard/gecko-guard-website.git
+cd gecko-guard-website
 
-1. **Convert markdown to HTML/React components**
-2. **Add responsive design and styling**
-3. **Create download links for extension files**
-4. **Set up hosting and domain**
-5. **Submit to extension stores**
-6. **Launch Beta marketing campaign**
+# Open in browser (any HTTP server works)
+python -m http.server 8000
+# OR
+npx serve .
 
-### Contact Information
-- **Support**: support@pricko.com
-- **Privacy**: privacy@pricko.com  
-- **Business**: hello@pricko.com
-- **Discord**: https://discord.gg/pricko
-- **GitHub**: https://github.com/pricko/privacy-guard
+# Visit http://localhost:8000
+```
+
+## Deployment
+
+### Recommended Hosting
+- Vercel/Netlify for static hosting
+- CDN for global performance
+- HTTPS enforced
+
+### Domain
+- Primary: geckoguard.com
+- GitHub Pages: gecko-guard.github.io
+
+## Contact Information
+
+- **Website**: https://geckoguard.com
+- **GitHub**: https://github.com/gecko-guard/gecko-guard
+- **Email**: support@geckoguard.com
+- **Discord**: https://discord.gg/geckoguard
+
+## License
+
+MIT License - see LICENSE file for details
 
 ---
 
-**Ready for Beta launch!** 🚀
+**100% Free Forever • Open Source • Privacy-First**
