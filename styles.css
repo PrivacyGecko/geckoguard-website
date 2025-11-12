@@ -168,10 +168,11 @@ body {
 }
 
 .nav-logo-full {
-  height: 40px;
+  height: 36px;
   width: auto;
   flex-shrink: 0;
-  shape-rendering: geometricPrecision;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .nav-title {
