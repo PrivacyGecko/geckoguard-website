@@ -1,0 +1,39 @@
+<svg width="200" height="48" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield -->
+  <g id="shield">
+    <path d="M14 4L24 8V14C24 19.5 20.5 24 14 26C7.5 24 4 19.5 4 14V8L14 4Z" fill="#1e293b"/>
+    <path d="M14 6L22 9V13.5C22 17.8 19.3 21.5 14 23.5C8.7 21.5 6 17.8 6 13.5V9L14 6Z" fill="#3b82f6"/>
+  </g>
+
+  <!-- Gecko silhouette -->
+  <g id="gecko" transform="translate(28, 6)">
+    <!-- Body -->
+    <ellipse cx="8" cy="10" rx="6" ry="4" fill="#00d084"/>
+    <!-- Head -->
+    <circle cx="14" cy="8" r="3.5" fill="#00d084"/>
+    <!-- Eye -->
+    <circle cx="15" cy="7.5" r="1" fill="#1e293b"/>
+    <!-- Tail -->
+    <path d="M2 10 Q -2 12 0 14" stroke="#00d084" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Legs -->
+    <path d="M6 13 L5 16" stroke="#00d084" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M10 13 L9 16" stroke="#00d084" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fingerprint -->
+  <g id="fingerprint" transform="translate(48, 8)">
+    <path d="M8 4 Q10 2 12 4" stroke="#8b5cf6" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M6 6 Q10 2 14 6" stroke="#8b5cf6" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M4 9 Q10 2 16 9" stroke="#8b5cf6" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M4 12 Q10 4 16 12" stroke="#8b5cf6" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M6 15 Q10 10 14 15" stroke="#8b5cf6" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Text: Gecko Guard -->
+  <text x="72" y="20" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1e293b">
+    Gecko
+  </text>
+  <text x="72" y="36" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#3b82f6">
+    Guard
+  </text>
+</svg>
