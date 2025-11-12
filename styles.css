@@ -150,8 +150,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-2) 0;
-  min-height: 56px;
+  padding: var(--space-3) 0;
+  min-height: 70px;
 }
 
 .nav-brand {
@@ -168,7 +168,7 @@ body {
 }
 
 .nav-logo-full {
-  height: 36px;
+  height: 56px;
   width: auto;
   flex-shrink: 0;
   image-rendering: -webkit-optimize-contrast;
