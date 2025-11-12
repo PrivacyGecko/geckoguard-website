@@ -95,7 +95,7 @@ During the production release:
 Questions about privacy? Contact us:
 - Email: privacy@geckoguard.app
 - Discord: [Gecko Guard Community](https://discord.gg/geckoguard)
-- GitHub: [Privacy Guard Issues](https://github.com/gecko-guard/gecko-guard/issues)
+- GitHub: [Privacy Guard Issues](https://github.com/PrivacyGecko/gecko-guard/issues)
 
 ---
 

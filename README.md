@@ -35,7 +35,7 @@ Website content for Gecko Guard, a 100% free and open-source privacy protection 
 
 ```bash
 # Clone the repository
-git clone https://github.com/gecko-guard/gecko-guard-website.git
+git clone https://github.com/PrivacyGecko/gecko-guard-website.git
 cd gecko-guard-website
 
 # Open in browser (any HTTP server works)
@@ -60,7 +60,7 @@ npx serve .
 ## Contact Information
 
 - **Website**: https://geckoguard.app
-- **GitHub**: https://github.com/gecko-guard/gecko-guard
+- **GitHub**: https://github.com/PrivacyGecko/gecko-guard
 - **Email**: support@geckoguard.app
 - **Discord**: https://discord.gg/geckoguard
 

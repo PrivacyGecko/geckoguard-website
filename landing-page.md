@@ -155,4 +155,4 @@ Currently desktop browsers only. Mobile support planned for future releases.
 - [Terms of Service](terms.html)
 - [Contact](mailto:hello@geckoguard.app)
 - [Discord](https://discord.gg/geckoguard)
-- [GitHub](https://github.com/gecko-guard/gecko-guard)
+- [GitHub](https://github.com/PrivacyGecko/gecko-guard)
