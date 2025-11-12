@@ -89,7 +89,7 @@ Try these steps:
 
 ### How do I report bugs?
 - **Discord**: [Gecko Guard Community](https://discord.gg/geckoguard) - Fastest response
-- **GitHub**: [Issues](https://github.com/gecko-guard/gecko-guard/issues) - Bug reports
+- **GitHub**: [Issues](https://github.com/PrivacyGecko/gecko-guard/issues) - Bug reports
 - **Email**: bugs@geckoguard.app - Technical issues
 
 ### Can I contribute to development?
