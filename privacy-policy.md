@@ -1,6 +1,6 @@
 # Privacy Policy - Gecko Guard
 
-*Last updated: August 31, 2024*
+*Last updated: November 12, 2024*
 
 ## Introduction
 
@@ -44,16 +44,18 @@ Each permission is essential for privacy protection and used exclusively for tha
 
 ## Third-Party Services
 
-### During Beta Release
+### Current Implementation
 - No third-party analytics or tracking services
 - No external API calls for core functionality
 - All features work completely offline
+- No cloud services or remote data storage
 
-### Future Premium Features
-When premium features launch:
-- Solana blockchain integration for token verification only
-- No personal data transmitted during token verification
-- Wallet connections remain under your control
+### Future Considerations
+If we add optional cloud features in the future:
+- All cloud features will be opt-in only
+- Encryption will protect any synchronized data
+- You'll maintain full control over your data
+- Transparency reports will document any data flow
 
 ## Your Control
 
@@ -83,19 +85,20 @@ Since we don't collect or store your data, there's nothing to breach.
 
 We will update this policy if our data practices change. Any updates will be posted here with a new "last updated" date.
 
-## Beta Release Notice
+## Open Source Commitment
 
-During the production release:
-- All features remain free and privacy-focused
-- No premium feature data collection
-- Policy may be updated as features are added
+As an open-source project:
+- Our code is publicly auditable on GitHub
+- Community can verify our privacy claims
+- No hidden data collection mechanisms
+- Regular security audits and transparency reports
 
 ## Contact Us
 
 Questions about privacy? Contact us:
 - Email: privacy@geckoguard.app
 - Discord: [Gecko Guard Community](https://discord.gg/geckoguard)
-- GitHub: [Privacy Guard Issues](https://github.com/gecko-guard/gecko-guard/issues)
+- GitHub: [Privacy Guard Issues](https://github.com/PrivacyGecko/gecko-guard/issues)
 
 ---
 
