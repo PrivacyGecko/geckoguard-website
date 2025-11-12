@@ -1,18 +1,18 @@
-# Frequently Asked Questions - Gecko Guard Beta
+# Frequently Asked Questions - Gecko Guard
 
-## Beta Release
+## Getting Started
 
 ### Is this really free?
-**Yes!** The Production v1.0 is completely free. All core privacy features are available at no cost while we develop production features.
+**Yes! 100% free forever.** Gecko Guard is open-source software with all privacy features available at no cost. No subscriptions, no hidden fees, no premium tiers. We're committed to keeping privacy protection accessible to everyone.
 
-### How long will the Beta last?
-The production release runs until our production launch, estimated for Q2 2025. Core privacy features will remain free after Beta.
-
-### What happens to my settings after Beta?
-All your settings and preferences will be preserved when transitioning from Beta to the full release.
+### Is this open source?
+**Yes!** Gecko Guard is fully open-source under the MIT license. You can review the code, contribute improvements, or fork the project on [GitHub](https://github.com/PrivacyGecko/gecko-guard).
 
 ### Can I provide feedback?
-Absolutely! Join our [Discord community](https://discord.gg/geckoguard) or submit feedback through GitHub issues.
+Absolutely! We welcome community input:
+- **Discord**: [Join our community](https://discord.gg/geckoguard) for discussions
+- **GitHub Issues**: Submit bug reports and feature requests
+- **Email**: feedback@geckoguard.app for general suggestions
 
 ---
 
@@ -97,22 +97,28 @@ We welcome community contributions! The extension will be open-source. Join our 
 
 ---
 
-## Premium Features
+## Future Roadmap
 
-### What will premium features include?
-- **Advanced Analytics**: Detailed privacy insights and reports
-- **Custom Rules**: Create your own blocking rules and filters
-- **Enterprise Tools**: Team management and compliance features
-- **Priority Support**: Direct access to development team
+### What features are planned for the future?
+We're exploring several enhancements based on community feedback:
+- **Advanced Analytics**: Detailed privacy insights and visual reports
+- **Custom Rules Engine**: Create your own blocking rules and filter lists
+- **Privacy Auditing Tools**: Comprehensive website privacy assessments
+- **Cross-Device Sync**: Sync settings across your browsers (privacy-preserving)
+- **Enhanced Fingerprint Protection**: Additional spoofing techniques
 
-### How will token verification work?
-Premium features will require holding Solana tokens. Verification happens locally - we never see your wallet details.
+### Will future features remain free?
+**Yes.** We're committed to keeping Gecko Guard 100% free and open-source. All future features will be available to everyone at no cost.
 
-### Which tokens will be supported?
-Token details will be announced closer to the premium launch. Join our Discord for first access to this information.
+### How can I influence the roadmap?
+Join our [Discord community](https://discord.gg/geckoguard) to vote on features, suggest ideas, and participate in development discussions. We prioritize features based on community needs.
 
-### Will I need to pay ongoing fees?
-Premium access will be token-based, not subscription-based. Hold the required tokens to access premium features.
+### Can I contribute to development?
+Absolutely! Gecko Guard is open-source and we welcome contributions:
+- **Code contributions**: Submit pull requests on GitHub
+- **Bug reports**: Help us identify and fix issues
+- **Documentation**: Improve guides and tutorials
+- **Testing**: Test new features and provide feedback
 
 ---
 
@@ -141,15 +147,15 @@ Premium access will be token-based, not subscription-based. Hold the required to
 ## Company
 
 ### Who makes Gecko Guard?
-Gecko Guard is developed by the Gecko Guard team, focused on building privacy-first tools for the decentralized web.
+Gecko Guard is developed by a community of privacy advocates and open-source contributors. The project is maintained under the PrivacyGecko organization and welcomes contributions from anyone.
 
 ### Where can I follow updates?
 - **Discord**: Real-time updates and community discussions
 - **Website**: Major announcements and releases
-- **GitHub**: Technical updates and development progress
+- **GitHub**: Technical updates, development progress, and roadmap
 
-### How do you make money?
-Revenue comes from production features. The core privacy protection remains free for everyone.
+### How is the project funded?
+Gecko Guard is a volunteer-driven open-source project. We accept community donations to cover infrastructure costs, but all features remain free regardless of contributions.
 
 ---
 
