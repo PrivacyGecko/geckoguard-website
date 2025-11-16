@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Gecko Guard</title>
+    <meta name="description" content="Frequently Asked Questions about Gecko Guard - Free, open-source browser extension for privacy protection.">
+    <link rel="icon" type="image/png" href="assets/logo/geckoguard-brand.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guide-container {
+            max-width: 900px;
+            margin: 100px auto 60px;
+            padding: 0 24px;
+        }
+        .guide-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .guide-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0a0a0a;
+            margin-bottom: 16px;
+        }
+        .guide-subtitle {
+            color: #666;
+            font-size: 18px;
+        }
+        .guide-content {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+        .guide-content h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0a0a0a;
+            margin: 56px 0 24px 0;
+            padding-top: 24px;
+            border-top: 2px solid #e5e7eb;
+        }
+        .guide-content h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        .guide-content h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #0a0a0a;
+            margin: 32px 0 16px 0;
+        }
+        .guide-content p {
+            margin-bottom: 16px;
+        }
+        .guide-content ol, .guide-content ul {
+            margin: 16px 0;
+            padding-left: 28px;
+        }
+        .guide-content li {
+            margin-bottom: 12px;
+        }
+        .feature-card {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+            border-left: 4px solid #10b981;
+        }
+        .feature-card h4 {
+            margin: 0 0 12px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #065f46;
+        }
+        .feature-card p {
+            margin: 0;
+            color: #064e3b;
+        }
+        .tip-box {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 8px;
+        }
+        .tip-box strong {
+            color: #92400e;
+        }
+        .back-link {
+            display: inline-block;
+            color: #10b981;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0a0a0a;
+            margin: 0 0 12px 0;
+        }
+        .faq-answer {
+            margin: 0;
+            color: #333;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="/">
+                        <img src="assets/logo/geckoguard-brand.png" alt="GeckoGuard by PrivacyGecko" class="nav-logo-full">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="/#features" class="nav-link">Features</a>
+                    <a href="/#download" class="nav-link">Download</a>
+                    <a href="/guide" class="nav-link">Guide</a>
+                    <a href="/#support" class="nav-link">Support</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FAQ Content -->
+    <div class="guide-container">
+        <a href="/" class="back-link">← Back to Home</a>
+
+        <div class="guide-header">
+            <h1 class="guide-title">Frequently Asked Questions</h1>
+            <p class="guide-subtitle">Everything you need to know about Gecko Guard</p>
+        </div>
+
+        <div class="guide-content">
+            <h2>Getting Started</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Is this really free?</h3>
+                <p class="faq-answer"><strong>Yes! 100% free forever.</strong> Gecko Guard is open-source software with all privacy features available at no cost. No subscriptions, no hidden fees, no premium tiers. We're committed to keeping privacy protection accessible to everyone.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Is this open source?</h3>
+                <p class="faq-answer"><strong>Yes!</strong> Gecko Guard is fully open-source under the MIT license. You can review the code, contribute improvements, or fork the project on <a href="https://github.com/PrivacyGecko/gecko-guard" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can I provide feedback?</h3>
+                <p class="faq-answer">Absolutely! We welcome community input:</p>
+                <ul>
+                    <li><strong>Discord:</strong> <a href="https://discord.gg/geckoguard" target="_blank" rel="noopener noreferrer">Join our community</a> for discussions</li>
+                    <li><strong>GitHub Issues:</strong> Submit bug reports and feature requests</li>
+                    <li><strong>Email:</strong> contact@privacygecko.com for general suggestions</li>
+                </ul>
+            </div>
+
+            <h2>Privacy & Security</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Do you collect my browsing data?</h3>
+                <p class="faq-answer"><strong>No.</strong> We don't collect, store, or transmit any of your browsing data. All processing happens locally on your device.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Why does the extension need so many permissions?</h3>
+                <p class="faq-answer">Each permission is essential for privacy protection:</p>
+                <ul>
+                    <li><strong>activeTab:</strong> Read current page to apply protections</li>
+                    <li><strong>declarativeNetRequest:</strong> Block unwanted network requests</li>
+                    <li><strong>storage:</strong> Save your preferences locally</li>
+                    <li><strong>scripting:</strong> Inject privacy protection code</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Is my data secure?</h3>
+                <p class="faq-answer">Yes. Since we don't collect your data, there's nothing to breach. All settings are stored locally on your device using browser security standards.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can I see what's being blocked?</h3>
+                <p class="faq-answer">Yes! Click the extension icon to see real-time blocking statistics and detailed information about what's being protected.</p>
+            </div>
+
+            <h2>Features</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What does the extension actually block?</h3>
+                <ul>
+                    <li><strong>Trackers:</strong> Analytics, advertising, and social media trackers</li>
+                    <li><strong>Fingerprinting:</strong> Canvas, WebGL, audio, and device fingerprinting</li>
+                    <li><strong>Cookies:</strong> Manages and categorizes cookies with smart deletion</li>
+                    <li><strong>Social widgets:</strong> Facebook, Twitter, and other tracking widgets</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Does it block ads?</h3>
+                <p class="faq-answer">The extension focuses on privacy protection, not ad blocking. It blocks tracking related to ads but may not block ad display.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Will it slow down my browsing?</h3>
+                <p class="faq-answer">No. The extension is optimized for minimal performance impact. Most users see improved page loading due to blocked content.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can I customize the settings?</h3>
+                <p class="faq-answer">Yes! Access settings through the extension popup. You can adjust blocking levels, whitelist sites, and configure cookie management.</p>
+            </div>
+
+            <h2>Compatibility</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Which browsers are supported?</h3>
+                <ul>
+                    <li>✅ <strong>Chrome 88+</strong> (Full support)</li>
+                    <li>✅ <strong>Firefox 91+</strong> (Full compatibility)</li>
+                    <li>✅ <strong>Brave</strong> (Chromium-based)</li>
+                    <li>✅ <strong>Edge</strong> (Chromium-based)</li>
+                    <li>❌ Safari (Not currently supported)</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Does it work on mobile?</h3>
+                <p class="faq-answer">Not yet. Mobile browser extensions have limited capabilities. We're exploring mobile app solutions for future releases.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can I use it with other privacy extensions?</h3>
+                <p class="faq-answer">Generally yes, but some conflicts may occur. We recommend disabling similar extensions to avoid conflicts and maximize performance.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Does it work on all websites?</h3>
+                <p class="faq-answer">Yes, the extension works on all websites. Some sites with strict Content Security Policies may limit certain protections.</p>
+            </div>
+
+            <h2>Technical</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How do I install it manually?</h3>
+                <p class="faq-answer">See our <a href="/guide">User Guide</a> for detailed installation steps for Chrome and Firefox.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">The extension isn't working properly</h3>
+                <p class="faq-answer">Try these steps:</p>
+                <ol>
+                    <li>Ensure latest version is installed</li>
+                    <li>Disable other privacy/security extensions temporarily</li>
+                    <li>Clear browser cache and restart</li>
+                    <li>Check browser console for errors</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How do I report bugs?</h3>
+                <ul>
+                    <li><strong>Discord:</strong> <a href="https://discord.gg/geckoguard" target="_blank" rel="noopener noreferrer">Gecko Guard Community</a> - Fastest response</li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/PrivacyGecko/gecko-guard/issues" target="_blank" rel="noopener noreferrer">Issues</a> - Bug reports</li>
+                    <li><strong>Email:</strong> contact@privacygecko.com - Technical issues</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can I contribute to development?</h3>
+                <p class="faq-answer">We welcome community contributions! The extension is open-source. Join our Discord for development discussions.</p>
+            </div>
+
+            <h2>Future Roadmap</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What features are planned for the future?</h3>
+                <p class="faq-answer">We're exploring several enhancements based on community feedback:</p>
+                <ul>
+                    <li><strong>Advanced Analytics:</strong> Detailed privacy insights and visual reports</li>
+                    <li><strong>Custom Rules Engine:</strong> Create your own blocking rules and filter lists</li>
+                    <li><strong>Privacy Auditing Tools:</strong> Comprehensive website privacy assessments</li>
+                    <li><strong>Cross-Device Sync:</strong> Sync settings across your browsers (privacy-preserving)</li>
+                    <li><strong>Enhanced Fingerprint Protection:</strong> Additional spoofing techniques</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Will future features remain free?</h3>
+                <p class="faq-answer"><strong>Yes.</strong> We're committed to keeping Gecko Guard 100% free and open-source. All future features will be available to everyone at no cost.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How can I influence the roadmap?</h3>
+                <p class="faq-answer">Join our <a href="https://discord.gg/geckoguard" target="_blank" rel="noopener noreferrer">Discord community</a> to vote on features, suggest ideas, and participate in development discussions. We prioritize features based on community needs.</p>
+            </div>
+
+            <h2>Support</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How do I get help?</h3>
+                <ol>
+                    <li><strong>Discord Community:</strong> <a href="https://discord.gg/geckoguard" target="_blank" rel="noopener noreferrer">Join here</a> - Active community support</li>
+                    <li><strong>Email Support:</strong> contact@privacygecko.com - Technical issues</li>
+                    <li><strong>Documentation:</strong> Check our <a href="/guide">User Guide</a></li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What information should I include in bug reports?</h3>
+                <ul>
+                    <li>Browser name and version</li>
+                    <li>Operating system</li>
+                    <li>Extension version</li>
+                    <li>Steps to reproduce the issue</li>
+                    <li>Screenshots if applicable</li>
+                    <li>Browser console errors</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How quickly do you respond to issues?</h3>
+                <ul>
+                    <li><strong>Discord:</strong> Usually within hours during business hours</li>
+                    <li><strong>Email:</strong> 24-48 hours for technical issues</li>
+                    <li><strong>GitHub Issues:</strong> 2-5 business days</li>
+                </ul>
+            </div>
+
+            <h2>Company</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Who makes Gecko Guard?</h3>
+                <p class="faq-answer">Gecko Guard is developed by a community of privacy advocates and open-source contributors. The project is maintained under the PrivacyGecko organization and welcomes contributions from anyone.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Where can I follow updates?</h3>
+                <ul>
+                    <li><strong>Discord:</strong> Real-time updates and community discussions</li>
+                    <li><strong>Website:</strong> Major announcements and releases</li>
+                    <li><strong>GitHub:</strong> Technical updates, development progress, and roadmap</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How is the project funded?</h3>
+                <p class="faq-answer">Gecko Guard is a volunteer-driven open-source project. We accept community donations to cover infrastructure costs, but all features remain free regardless of contributions.</p>
+            </div>
+
+            <div class="tip-box" style="margin-top: 48px;">
+                <strong>Don't see your question?</strong> Join our <a href="https://discord.gg/geckoguard" target="_blank" rel="noopener noreferrer">Discord community</a> or <a href="mailto:contact@privacygecko.com">email us</a> and ask directly!
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo/geckoguard-brand.png" alt="GeckoGuard" class="footer-logo">
+                    <p>100% Free. Forever.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="/#features">Features</a>
+                        <a href="/#download">Download</a>
+                        <a href="/guide">User Guide</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="/#faq">FAQ</a>
+                        <a href="/privacy">Privacy</a>
+                        <a href="https://github.com/PrivacyGecko/gecko-guard" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="mailto:contact@privacygecko.com">Email</a>
+                        <a href="https://github.com/PrivacyGecko/gecko-guard/issues" target="_blank" rel="noopener noreferrer">Report Bug</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gecko Guard by PrivacyGecko. Open Source. No Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

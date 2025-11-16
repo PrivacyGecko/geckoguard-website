@@ -12,7 +12,7 @@
 Absolutely! We welcome community input:
 - **Discord**: [Join our community](https://discord.gg/geckoguard) for discussions
 - **GitHub Issues**: Submit bug reports and feature requests
-- **Email**: feedback@geckoguard.app for general suggestions
+- **Email**: contact@privacygecko.com for general suggestions
 
 ---
 
@@ -90,7 +90,7 @@ Try these steps:
 ### How do I report bugs?
 - **Discord**: [Gecko Guard Community](https://discord.gg/geckoguard) - Fastest response
 - **GitHub**: [Issues](https://github.com/PrivacyGecko/gecko-guard/issues) - Bug reports
-- **Email**: bugs@geckoguard.app - Technical issues
+- **Email**: contact@privacygecko.com - Technical issues
 
 ### Can I contribute to development?
 We welcome community contributions! The extension will be open-source. Join our Discord for development discussions.
@@ -126,7 +126,7 @@ Absolutely! Gecko Guard is open-source and we welcome contributions:
 
 ### How do I get help?
 1. **Discord Community**: [Join here](https://discord.gg/geckoguard) - Active community support
-2. **Email Support**: support@geckoguard.app - Technical issues
+2. **Email Support**: contact@privacygecko.com - Technical issues
 3. **Documentation**: Check our installation and user guides
 
 ### What information should I include in bug reports?

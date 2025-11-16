@@ -61,7 +61,7 @@ npx serve .
 
 - **Website**: https://geckoguard.app
 - **GitHub**: https://github.com/PrivacyGecko/gecko-guard
-- **Email**: support@geckoguard.app
+- **Email**: contact@privacygecko.com
 - **Discord**: https://discord.gg/geckoguard
 
 ## License

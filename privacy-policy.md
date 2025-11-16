@@ -96,7 +96,7 @@ As an open-source project:
 ## Contact Us
 
 Questions about privacy? Contact us:
-- Email: privacy@geckoguard.app
+- Email: contact@privacygecko.com
 - Discord: [Gecko Guard Community](https://discord.gg/geckoguard)
 - GitHub: [Privacy Guard Issues](https://github.com/PrivacyGecko/gecko-guard/issues)
 
