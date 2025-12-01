@@ -1,273 +1,356 @@
-// Gecko Guard - Website JavaScript
+// GeckoGuard - Refined Website JavaScript
+// =========================================
 
-// =====================================================
-// Smooth Scrolling & Navigation
-// =====================================================
+(function() {
+  'use strict';
 
-function scrollToDownload() {
-  document.getElementById('download').scrollIntoView({ 
-    behavior: 'smooth' 
-  });
-}
+  // =========================================
+  // Navigation
+  // =========================================
 
-// =====================================================
-// Stats Animation
-// =====================================================
+  function initNavigation() {
+    const nav = document.querySelector('.nav');
+    const progressBar = document.querySelector('.nav-progress');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id]');
 
-function animateStats() {
-  const stats = document.querySelectorAll('.stat-number');
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const target = entry.target;
-        const finalValue = target.textContent;
-        
-        // Skip if already animated
-        if (target.classList.contains('animated')) return;
-        target.classList.add('animated');
-        
-        // Animate numbers (skip percentage values)
-        if (!finalValue.includes('%')) {
-          animateNumber(target, 0, parseInt(finalValue) || 0, 2000);
-        }
+    if (!nav) return;
+
+    const scrollThreshold = 20;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+      // Scroll progress bar
+      if (progressBar) {
+        const scrollPercent = (currentScroll / docHeight) * 100;
+        progressBar.style.width = `${scrollPercent}%`;
       }
-    });
-  }, { threshold: 0.5 });
-  
-  stats.forEach(stat => observer.observe(stat));
-}
 
-function animateNumber(element, start, end, duration) {
-  const startTime = performance.now();
-  
-  function update(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    
-    // Easing function
-    const easeOut = 1 - Math.pow(1 - progress, 3);
-    const current = Math.floor(start + (end - start) * easeOut);
-    
-    element.textContent = current.toLocaleString();
-    
-    if (progress < 1) {
-      requestAnimationFrame(update);
-    } else {
-      element.textContent = end.toLocaleString();
+      // Nav background on scroll
+      if (currentScroll > scrollThreshold) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+
+      // Active nav link based on scroll position
+      let currentSection = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
+        if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+
+    }, { passive: true });
+  }
+
+  // =========================================
+  // Smooth Scrolling
+  // =========================================
+
+  function scrollToDownload() {
+    const downloadSection = document.getElementById('download');
+    if (downloadSection) {
+      const navHeight = document.querySelector('.nav')?.offsetHeight || 0;
+      const targetPosition = downloadSection.getBoundingClientRect().top + window.pageYOffset - navHeight - 32;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
     }
   }
-  
-  requestAnimationFrame(update);
-}
 
-// =====================================================
-// Browser Detection & Download Links
-// =====================================================
+  // Make globally available
+  window.scrollToDownload = scrollToDownload;
 
-function detectBrowser() {
-  const userAgent = navigator.userAgent.toLowerCase();
-  
-  if (userAgent.includes('chrome') && !userAgent.includes('edg')) {
-    return 'chrome';
-  } else if (userAgent.includes('firefox')) {
-    return 'firefox';
-  } else if (userAgent.includes('brave')) {
-    return 'brave';
-  } else if (userAgent.includes('edg')) {
-    return 'edge';
-  }
-  
-  return 'chrome'; // Default fallback
-}
+  function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
 
-function updateDownloadButtons() {
-  const browser = detectBrowser();
-  const primaryButton = document.querySelector('.hero-cta .btn-primary');
-  
-  const browserNames = {
-    chrome: 'Chrome',
-    firefox: 'Firefox',
-    brave: 'Brave',
-    edge: 'Edge'
-  };
-  
-  if (primaryButton) {
-    primaryButton.textContent = `Download for ${browserNames[browser]}`;
-  }
-}
+        if (target) {
+          const navHeight = document.querySelector('.nav')?.offsetHeight || 0;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 32;
 
-// =====================================================
-// Privacy Protection Demo
-// =====================================================
-
-function startProtectionDemo() {
-  const statItems = document.querySelectorAll('.stat-item');
-  
-  // Simulate real-time blocking
-  setInterval(() => {
-    statItems.forEach(item => {
-      item.style.animation = 'none';
-      setTimeout(() => {
-        item.style.animation = 'pulse-protection 0.5s ease';
-      }, 10);
-    });
-  }, 3000);
-}
-
-// =====================================================
-// Dark Mode Toggle (Future Enhancement)
-// =====================================================
-
-function initializeDarkMode() {
-  // Check for saved theme preference or default to light
-  const savedTheme = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', savedTheme);
-}
-
-function toggleDarkMode() {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  
-  document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-}
-
-// =====================================================
-// Form Handling (Future Newsletter Signup)
-// =====================================================
-
-function handleNewsletterSignup(event) {
-  event.preventDefault();
-  const email = event.target.email.value;
-  
-  // Future: Send to newsletter service
-  console.log('Newsletter signup:', email);
-  
-  // Show success message
-  showNotification('Thanks! We\'ll notify you about the production launch.', 'success');
-}
-
-function showNotification(message, type = 'info') {
-  const notification = document.createElement('div');
-  notification.className = `notification notification-${type}`;
-  notification.textContent = message;
-  
-  document.body.appendChild(notification);
-  
-  // Animate in
-  setTimeout(() => notification.classList.add('show'), 100);
-  
-  // Remove after 3 seconds
-  setTimeout(() => {
-    notification.classList.remove('show');
-    setTimeout(() => document.body.removeChild(notification), 300);
-  }, 3000);
-}
-
-// =====================================================
-// Analytics (Privacy-Respectful)
-// =====================================================
-
-function trackEvent(eventName, properties = {}) {
-  // Future: Add privacy-respectful analytics
-  // Only track basic usage patterns, no personal data
-  console.log('Event:', eventName, properties);
-}
-
-// =====================================================
-// Performance Monitoring
-// =====================================================
-
-function initializePerformanceMonitoring() {
-  // Monitor Core Web Vitals
-  if ('web-vital' in window) {
-    // Future: Add web vitals monitoring
-  }
-  
-  // Track page load performance
-  window.addEventListener('load', () => {
-    const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-    trackEvent('page_load', { loadTime });
-  });
-}
-
-// =====================================================
-// Initialization
-// =====================================================
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Initialize all features
-  animateStats();
-  updateDownloadButtons();
-  startProtectionDemo();
-  initializeDarkMode();
-  initializePerformanceMonitoring();
-  
-  // Add event listeners
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-  
-  // Track download button clicks
-  document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
-    button.addEventListener('click', () => {
-      trackEvent('download_button_click', { 
-        buttonText: button.textContent,
-        browser: detectBrowser()
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
       });
     });
-  });
-});
+  }
 
-// =====================================================
-// CSS Animations (Added via JavaScript)
-// =====================================================
+  // =========================================
+  // Scroll Animations
+  // =========================================
 
-const additionalCSS = `
-@keyframes pulse-protection {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.02); background-color: var(--accent-green); }
-  100% { transform: scale(1); }
-}
+  function initScrollAnimations() {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -80px 0px',
+      threshold: 0.1
+    };
 
-.notification {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: var(--space-4) var(--space-6);
-  border-radius: var(--radius-lg);
-  color: white;
-  font-weight: var(--font-medium);
-  transform: translateX(100%);
-  transition: transform var(--transition-normal);
-  z-index: 9999;
-}
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
 
-.notification.show {
-  transform: translateX(0);
-}
+    // Elements to animate
+    const animatedElements = document.querySelectorAll(
+      '.section-header, .feature-card, .step, .privacy-feature, .browser-card, .faq-item, .support-card'
+    );
 
-.notification-success {
-  background: var(--accent-green);
-}
+    animatedElements.forEach((el, index) => {
+      el.classList.add('fade-in');
+      el.style.transitionDelay = `${(index % 4) * 0.08}s`;
+      observer.observe(el);
+    });
+  }
 
-.notification-error {
-  background: var(--accent-red);
-}
+  // =========================================
+  // Browser Detection
+  // =========================================
 
-.notification-info {
-  background: var(--primary-blue);
-}
-`;
+  function detectBrowser() {
+    const ua = navigator.userAgent.toLowerCase();
 
-// Inject additional CSS
-const style = document.createElement('style');
-style.textContent = additionalCSS;
-document.head.appendChild(style);
+    if (ua.includes('brave')) return 'brave';
+    if (ua.includes('edg')) return 'edge';
+    if (ua.includes('chrome')) return 'chrome';
+    if (ua.includes('firefox')) return 'firefox';
+    if (ua.includes('safari')) return 'safari';
+
+    return 'chrome';
+  }
+
+  function updateDownloadButton() {
+    const browser = detectBrowser();
+    const primaryButton = document.querySelector('.hero-cta .btn-primary');
+
+    const browserNames = {
+      chrome: 'Chrome',
+      firefox: 'Firefox',
+      brave: 'Brave',
+      edge: 'Edge',
+      safari: 'Safari'
+    };
+
+    if (primaryButton && browserNames[browser]) {
+      primaryButton.textContent = `Download for ${browserNames[browser]}`;
+    }
+  }
+
+  // =========================================
+  // Browser Mockup Animation
+  // =========================================
+
+  function initMockupAnimation() {
+    const statItems = document.querySelectorAll('.stat-item');
+    if (statItems.length === 0) return;
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+      // Reset all
+      statItems.forEach(item => {
+        item.style.transform = '';
+        item.style.background = '';
+      });
+
+      // Highlight current
+      if (statItems[currentIndex]) {
+        statItems[currentIndex].style.transform = 'translateX(4px)';
+        statItems[currentIndex].style.background = 'var(--coral-100)';
+      }
+
+      currentIndex = (currentIndex + 1) % statItems.length;
+    }, 2500);
+  }
+
+  // =========================================
+  // Mobile Menu
+  // =========================================
+
+  function initMobileMenu() {
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-menu-link');
+    const mobileCta = document.querySelector('.mobile-menu-cta a');
+
+    if (!menuToggle || !mobileMenu) return;
+
+    // Toggle menu on hamburger click
+    menuToggle.addEventListener('click', () => {
+      const isActive = menuToggle.classList.contains('active');
+
+      if (isActive) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Close menu when clicking a link
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Close menu when clicking CTA
+    if (mobileCta) {
+      mobileCta.addEventListener('click', () => {
+        closeMenu();
+      });
+    }
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menuToggle.classList.contains('active')) {
+        closeMenu();
+      }
+    });
+
+    function openMenu() {
+      menuToggle.classList.add('active');
+      menuToggle.setAttribute('aria-expanded', 'true');
+      mobileMenu.classList.add('active');
+      document.body.classList.add('menu-open');
+    }
+
+    function closeMenu() {
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      mobileMenu.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    }
+  }
+
+  // =========================================
+  // Button Interactions
+  // =========================================
+
+  function initButtonEffects() {
+    document.querySelectorAll('.btn').forEach(button => {
+      // Add hover sound effect placeholder
+      button.addEventListener('mouseenter', () => {
+        button.style.willChange = 'transform, box-shadow';
+      });
+
+      button.addEventListener('mouseleave', () => {
+        button.style.willChange = 'auto';
+      });
+    });
+  }
+
+  // =========================================
+  // Feature Card Hover Effects
+  // =========================================
+
+  function initCardEffects() {
+    const cards = document.querySelectorAll('.feature-card, .support-card, .browser-card');
+
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.willChange = 'transform, box-shadow';
+      });
+
+      card.addEventListener('mouseleave', function() {
+        this.style.willChange = 'auto';
+      });
+    });
+  }
+
+  // =========================================
+  // Performance Optimization
+  // =========================================
+
+  function initPerformanceOptimizations() {
+    // Lazy load images that are off-screen
+    if ('loading' in HTMLImageElement.prototype) {
+      document.querySelectorAll('img').forEach(img => {
+        if (!img.hasAttribute('loading')) {
+          img.setAttribute('loading', 'lazy');
+        }
+      });
+    }
+
+    // Preconnect to external resources
+    const preconnectUrls = [
+      'https://fonts.googleapis.com',
+      'https://fonts.gstatic.com'
+    ];
+
+    preconnectUrls.forEach(url => {
+      const link = document.createElement('link');
+      link.rel = 'preconnect';
+      link.href = url;
+      link.crossOrigin = 'anonymous';
+      document.head.appendChild(link);
+    });
+  }
+
+  // =========================================
+  // Analytics (Privacy-Respecting)
+  // =========================================
+
+  function trackEvent(name, data = {}) {
+    // Placeholder for privacy-respecting analytics
+    if (window.location.hostname === 'localhost') {
+      console.log('📊 Event:', name, data);
+    }
+  }
+
+  // =========================================
+  // Initialize
+  // =========================================
+
+  function init() {
+    // Core functionality
+    initNavigation();
+    initSmoothScroll();
+    initMobileMenu();
+    updateDownloadButton();
+
+    // Visual enhancements
+    initScrollAnimations();
+    initMockupAnimation();
+    initButtonEffects();
+    initCardEffects();
+
+    // Performance
+    initPerformanceOptimizations();
+
+    // Track page view
+    trackEvent('page_view', { path: window.location.pathname });
+
+    console.log('🦎 GeckoGuard ready');
+  }
+
+  // Run when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();

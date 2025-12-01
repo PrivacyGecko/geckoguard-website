@@ -8,161 +8,72 @@
     <link rel="icon" type="image/png" href="assets/logo/geckoguard-brand.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .guide-container {
-            max-width: 900px;
-            margin: 100px auto 60px;
-            padding: 0 24px;
-        }
-        .guide-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .guide-title {
-            font-size: 48px;
-            font-weight: 700;
-            color: #0a0a0a;
-            margin-bottom: 16px;
-        }
-        .guide-subtitle {
-            color: #666;
-            font-size: 18px;
-        }
-        .guide-content {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #333;
-            display: block !important;
-        }
-        .guide-content > * {
-            display: block !important;
-            grid-template-columns: unset !important;
-            width: 100% !important;
-        }
-        .guide-content h2 {
-            font-size: 32px;
-            font-weight: 700;
-            color: #0a0a0a;
-            margin: 56px 0 24px 0;
-            padding-top: 24px;
-            border-top: 2px solid #e5e7eb;
-        }
-        .guide-content h2:first-of-type {
-            border-top: none;
-            padding-top: 0;
-            margin-top: 0;
-        }
-        .guide-content h3 {
-            font-size: 22px;
-            font-weight: 600;
-            color: #0a0a0a;
-            margin: 32px 0 16px 0;
-        }
-        .guide-content p {
-            margin-bottom: 16px;
-        }
-        .guide-content ol, .guide-content ul {
-            margin: 16px 0;
-            padding-left: 28px;
-        }
-        .guide-content li {
-            margin-bottom: 12px;
-        }
-        .feature-card {
-            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-            padding: 24px;
-            border-radius: 12px;
-            margin: 24px 0;
-            border-left: 4px solid #10b981;
-        }
-        .feature-card h4 {
-            margin: 0 0 12px 0;
-            font-size: 18px;
-            font-weight: 600;
-            color: #065f46;
-        }
-        .feature-card p {
-            margin: 0;
-            color: #064e3b;
-        }
-        .tip-box {
-            background: #fffbeb;
-            border-left: 4px solid #f59e0b;
-            padding: 16px 20px;
-            margin: 24px 0;
-            border-radius: 8px;
-        }
-        .tip-box strong {
-            color: #92400e;
-        }
-        .back-link {
-            display: inline-block;
-            color: #10b981;
-            text-decoration: none;
-            font-weight: 500;
-            margin-bottom: 24px;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        .support-card {
+        .support-page-card {
             background: white;
-            padding: 32px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            margin: 24px 0;
-            border: 1px solid #e5e7eb;
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+            margin: var(--space-6) 0;
+            border: 1px solid var(--cream-200);
         }
-        .support-card h3 {
-            margin-top: 0;
-            color: #10b981;
+        .support-page-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-xl);
+            font-weight: 600;
+            color: var(--coral-500);
+            margin: 0 0 var(--space-3) 0;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: var(--space-3);
         }
-        .support-icon {
-            font-size: 32px;
+        .support-page-icon {
+            font-size: 1.75rem;
         }
-        .contact-method {
+        .support-page-card p {
+            color: var(--ink-600);
+            margin-bottom: var(--space-4);
+        }
+        .contact-method-link {
             display: flex;
             align-items: center;
-            gap: 12px;
-            padding: 12px 16px;
-            background: #f9fafb;
-            border-radius: 8px;
-            margin: 12px 0;
+            gap: var(--space-3);
+            padding: var(--space-4) var(--space-5);
+            background: var(--cream-100);
+            border-radius: var(--radius-lg);
+            margin: var(--space-3) 0;
             text-decoration: none;
-            color: #333;
-            transition: background 0.2s;
+            color: var(--ink-700);
+            transition: all var(--duration-fast) var(--ease-out);
         }
-        .contact-method:hover {
-            background: #f3f4f6;
+        .contact-method-link:hover {
+            background: var(--coral-100);
+            transform: translateX(4px);
         }
-        .btn-support {
+        .btn-support-link {
             display: inline-block;
-            padding: 12px 24px;
-            background: #10b981;
+            padding: var(--space-4) var(--space-6);
+            background: var(--coral-500);
             color: white;
-            border-radius: 8px;
+            border-radius: var(--radius-lg);
             text-decoration: none;
             font-weight: 600;
             text-align: center;
-            transition: background 0.2s;
+            transition: background var(--duration-fast);
         }
-        .btn-support:hover {
-            background: #059669;
+        .btn-support-link:hover {
+            background: var(--coral-600);
         }
-        .response-time {
+        .response-time-badge {
             display: inline-block;
-            padding: 6px 12px;
-            background: #dbeafe;
-            color: #1e40af;
-            border-radius: 6px;
-            font-size: 14px;
+            padding: var(--space-2) var(--space-4);
+            background: var(--cream-200);
+            color: var(--ink-700);
+            border-radius: var(--radius-md);
+            font-size: var(--text-sm);
             font-weight: 500;
-            margin-top: 8px;
+            margin-top: var(--space-3);
         }
     </style>
 </head>
@@ -172,161 +83,173 @@
         <div class="container">
             <div class="nav-content">
                 <div class="nav-brand">
-                    <a href="/">
+                    <a href="index.html">
                         <img src="assets/logo/geckoguard-brand.png" alt="GeckoGuard by PrivacyGecko" class="nav-logo-full">
                     </a>
                 </div>
                 <div class="nav-links">
-                    <a href="/#features" class="nav-link">Features</a>
-                    <a href="/#download" class="nav-link">Download</a>
-                    <a href="/guide" class="nav-link">Guide</a>
-                    <a href="/#support" class="nav-link">Support</a>
+                    <a href="index.html#features" class="nav-link">Features</a>
+                    <a href="index.html#download" class="nav-link">Download</a>
+                    <a href="guide.html" class="nav-link">Guide</a>
+                    <a href="index.html#support" class="nav-link">Support</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Support Content -->
-    <div class="guide-container">
-        <a href="/" class="back-link">← Back to Home</a>
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <a href="index.html" class="link" style="display: inline-block; margin-bottom: var(--space-6);">&larr; Back to Home</a>
 
-        <div class="guide-header">
-            <h1 class="guide-title">Support & Contact</h1>
-            <p class="guide-subtitle">We're here to help with any questions or issues</p>
-        </div>
-
-        <div class="guide-content">
-            <h2>Get Support</h2>
-
-            <div class="support-card">
-                <h3><span class="support-icon">📧</span> Email Support</h3>
-                <p>For technical issues, bug reports, or general questions, reach out to our support team.</p>
-                <a href="mailto:contact@privacygecko.com" class="contact-method">
-                    <span>📬</span>
-                    <span>contact@privacygecko.com</span>
-                </a>
-                <span class="response-time">⏱️ Response time: 24-48 hours</span>
+            <div class="page-header">
+                <h1 class="page-title">Support & Contact</h1>
+                <p class="page-subtitle">We're here to help with any questions or issues</p>
             </div>
 
-            <div class="support-card">
-                <h3><span class="support-icon">💬</span> Discord Community</h3>
-                <p>Join our community for real-time support, discussions, and updates. Connect with other users and developers.</p>
-                <a href="https://discord.gg/geckoguard" class="btn-support" target="_blank" rel="noopener noreferrer">Join Discord Server</a>
-                <span class="response-time">⏱️ Response time: Usually within hours</span>
+            <div class="content-section">
+                <h2>Get Support</h2>
+
+                <div class="support-page-card">
+                    <h3><span class="support-page-icon">📧</span> Email Support</h3>
+                    <p>For technical issues, bug reports, or general questions, reach out to our support team.</p>
+                    <a href="mailto:contact@privacygecko.com" class="contact-method-link">
+                        <span>📬</span>
+                        <span>contact@privacygecko.com</span>
+                    </a>
+                    <span class="response-time-badge">Response time: 24-48 hours</span>
+                </div>
+
+                <div class="support-page-card">
+                    <h3><span class="support-page-icon">💬</span> Discord Community</h3>
+                    <p>Join our community for real-time support, discussions, and updates. Connect with other users and developers.</p>
+                    <a href="https://discord.gg/geckoguard" class="btn-support-link" target="_blank" rel="noopener noreferrer">Join Discord Server</a>
+                    <span class="response-time-badge">Response time: Usually within hours</span>
+                </div>
+
+                <div class="support-page-card">
+                    <h3><span class="support-page-icon">🐛</span> Report Bugs</h3>
+                    <p>Found a bug or have a feature request? Report it directly on GitHub for tracking and collaboration.</p>
+                    <a href="https://github.com/PrivacyGecko/gecko-guard/issues" class="btn-support-link" target="_blank" rel="noopener noreferrer">Open GitHub Issue</a>
+                    <span class="response-time-badge">Response time: 2-5 business days</span>
+                </div>
             </div>
 
-            <div class="support-card">
-                <h3><span class="support-icon">🐛</span> Report Bugs</h3>
-                <p>Found a bug or have a feature request? Report it directly on GitHub for tracking and collaboration.</p>
-                <a href="https://github.com/PrivacyGecko/gecko-guard/issues" class="btn-support" target="_blank" rel="noopener noreferrer">Open GitHub Issue</a>
-                <span class="response-time">⏱️ Response time: 2-5 business days</span>
+            <div class="content-section">
+                <h2>Self-Service Resources</h2>
+
+                <div class="content-feature-card">
+                    <h4>User Guide</h4>
+                    <p>Comprehensive installation and usage instructions for all features.</p>
+                    <a href="guide.html" style="color: var(--coral-500); font-weight: 600;">Read the User Guide →</a>
+                </div>
+
+                <div class="content-feature-card">
+                    <h4>Frequently Asked Questions</h4>
+                    <p>Answers to common questions about features, privacy, compatibility, and more.</p>
+                    <a href="faq.html" style="color: var(--coral-500); font-weight: 600;">Browse FAQ →</a>
+                </div>
+
+                <div class="content-feature-card">
+                    <h4>Privacy Policy</h4>
+                    <p>Learn about our privacy-first approach and data handling practices.</p>
+                    <a href="privacy.html" style="color: var(--coral-500); font-weight: 600;">Read Privacy Policy →</a>
+                </div>
+
+                <div class="content-feature-card">
+                    <h4>Terms of Service</h4>
+                    <p>Understand the terms and conditions for using Gecko Guard.</p>
+                    <a href="terms.html" style="color: var(--coral-500); font-weight: 600;">Read Terms →</a>
+                </div>
             </div>
 
-            <h2>Self-Service Resources</h2>
+            <div class="content-section">
+                <h2>Common Support Topics</h2>
 
-            <div class="feature-card">
-                <h4>📖 User Guide</h4>
-                <p>Comprehensive installation and usage instructions for all features.</p>
-                <a href="/guide" style="color: #065f46; font-weight: 600; text-decoration: underline;">Read the User Guide →</a>
-            </div>
+                <h3>Installation Issues</h3>
+                <ul>
+                    <li><a href="guide.html#installation">How to install on Chrome/Firefox</a></li>
+                    <li><a href="guide.html#troubleshooting">Extension not appearing after installation</a></li>
+                    <li><a href="guide.html#troubleshooting">Permission errors during installation</a></li>
+                </ul>
 
-            <div class="feature-card">
-                <h4>❓ Frequently Asked Questions</h4>
-                <p>Answers to common questions about features, privacy, compatibility, and more.</p>
-                <a href="/faq" style="color: #065f46; font-weight: 600; text-decoration: underline;">Browse FAQ →</a>
-            </div>
+                <h3>Feature Questions</h3>
+                <ul>
+                    <li><a href="guide.html#main-features">Understanding tracker blocking</a></li>
+                    <li><a href="guide.html#main-features">How fingerprint spoofing works</a></li>
+                    <li><a href="guide.html#main-features">Managing tracking cookies</a></li>
+                    <li><a href="guide.html#view-statistics">Viewing protection statistics</a></li>
+                </ul>
 
-            <div class="feature-card">
-                <h4>🔒 Privacy Policy</h4>
-                <p>Learn about our privacy-first approach and data handling practices.</p>
-                <a href="/privacy" style="color: #065f46; font-weight: 600; text-decoration: underline;">Read Privacy Policy →</a>
-            </div>
-
-            <div class="feature-card">
-                <h4>📜 Terms of Service</h4>
-                <p>Understand the terms and conditions for using Gecko Guard.</p>
-                <a href="/terms" style="color: #065f46; font-weight: 600; text-decoration: underline;">Read Terms →</a>
-            </div>
-
-            <h2>Common Support Topics</h2>
-
-            <h3>Installation Issues</h3>
-            <ul>
-                <li><a href="/guide#installation">How to install on Chrome/Firefox</a></li>
-                <li><a href="/guide#troubleshooting">Extension not appearing after installation</a></li>
-                <li><a href="/guide#troubleshooting">Permission errors during installation</a></li>
-            </ul>
-
-            <h3>Feature Questions</h3>
-            <ul>
-                <li><a href="/guide#main-features">Understanding tracker blocking</a></li>
-                <li><a href="/guide#main-features">How fingerprint spoofing works</a></li>
-                <li><a href="/guide#main-features">Managing tracking cookies</a></li>
-                <li><a href="/guide#view-statistics">Viewing protection statistics</a></li>
-            </ul>
-
-            <h3>Troubleshooting</h3>
-            <ul>
-                <li><a href="/guide#site-not-working-properly">Website not working properly</a></li>
-                <li><a href="/guide#extension-not-working">Extension not functioning correctly</a></li>
-                <li><a href="/guide#performance-issues">Performance or speed issues</a></li>
-            </ul>
-
-            <h2>Before Contacting Support</h2>
-
-            <div class="tip-box">
-                <p><strong>Prepare this information to help us assist you faster:</strong></p>
-                <ul style="margin: 12px 0 0 0;">
-                    <li>Browser name and version (Chrome 120, Firefox 115, etc.)</li>
-                    <li>Operating system (Windows 11, macOS 14, Linux Ubuntu, etc.)</li>
-                    <li>Extension version (check in browser extensions page)</li>
-                    <li>Detailed description of the issue or question</li>
-                    <li>Steps to reproduce (if reporting a bug)</li>
-                    <li>Screenshots or console errors (if applicable)</li>
+                <h3>Troubleshooting</h3>
+                <ul>
+                    <li><a href="guide.html#site-not-working-properly">Website not working properly</a></li>
+                    <li><a href="guide.html#extension-not-working">Extension not functioning correctly</a></li>
+                    <li><a href="guide.html#performance-issues">Performance or speed issues</a></li>
                 </ul>
             </div>
 
-            <h2>Support Hours & Expectations</h2>
+            <div class="content-section">
+                <h2>Before Contacting Support</h2>
 
-            <h3>Support Availability</h3>
-            <p>As an open-source project maintained by volunteers and contributors:</p>
-            <ul>
-                <li><strong>Discord:</strong> Community support available 24/7, core team typically responds during business hours (US Eastern Time)</li>
-                <li><strong>Email:</strong> Monitored Monday-Friday, 9am-5pm ET. Responses within 24-48 hours</li>
-                <li><strong>GitHub Issues:</strong> Reviewed regularly, responses within 2-5 business days</li>
-            </ul>
+                <div class="tip-box">
+                    <p><strong>Prepare this information to help us assist you faster:</strong></p>
+                    <ul style="margin: var(--space-3) 0 0 0;">
+                        <li>Browser name and version (Chrome 120, Firefox 115, etc.)</li>
+                        <li>Operating system (Windows 11, macOS 14, Linux Ubuntu, etc.)</li>
+                        <li>Extension version (check in browser extensions page)</li>
+                        <li>Detailed description of the issue or question</li>
+                        <li>Steps to reproduce (if reporting a bug)</li>
+                        <li>Screenshots or console errors (if applicable)</li>
+                    </ul>
+                </div>
+            </div>
 
-            <h3>Priority Guidelines</h3>
-            <ul>
-                <li><strong>Critical bugs:</strong> Security issues and major functionality breaks - Highest priority</li>
-                <li><strong>Bug reports:</strong> Non-critical issues affecting functionality - High priority</li>
-                <li><strong>Feature requests:</strong> Enhancement suggestions - Medium priority</li>
-                <li><strong>General questions:</strong> Usage help and clarifications - Standard priority</li>
-            </ul>
+            <div class="content-section">
+                <h2>Support Hours & Expectations</h2>
 
-            <h2>Contributing & Community</h2>
+                <h3>Support Availability</h3>
+                <p>As an open-source project maintained by volunteers and contributors:</p>
+                <ul>
+                    <li><strong>Discord:</strong> Community support available 24/7, core team typically responds during business hours (US Eastern Time)</li>
+                    <li><strong>Email:</strong> Monitored Monday-Friday, 9am-5pm ET. Responses within 24-48 hours</li>
+                    <li><strong>GitHub Issues:</strong> Reviewed regularly, responses within 2-5 business days</li>
+                </ul>
 
-            <h3>Open Source Contributions</h3>
-            <p>Want to help improve Gecko Guard? We welcome contributions!</p>
-            <ul>
-                <li><strong>Code contributions:</strong> Submit pull requests on <a href="https://github.com/PrivacyGecko/gecko-guard" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><strong>Documentation:</strong> Improve guides, tutorials, and documentation</li>
-                <li><strong>Testing:</strong> Test new features and report bugs</li>
-                <li><strong>Community support:</strong> Help other users in Discord</li>
-            </ul>
+                <h3>Priority Guidelines</h3>
+                <ul>
+                    <li><strong>Critical bugs:</strong> Security issues and major functionality breaks - Highest priority</li>
+                    <li><strong>Bug reports:</strong> Non-critical issues affecting functionality - High priority</li>
+                    <li><strong>Feature requests:</strong> Enhancement suggestions - Medium priority</li>
+                    <li><strong>General questions:</strong> Usage help and clarifications - Standard priority</li>
+                </ul>
+            </div>
 
-            <h3>Stay Connected</h3>
-            <ul>
-                <li><strong>Discord:</strong> Real-time updates, discussions, and community events</li>
-                <li><strong>GitHub:</strong> Development roadmap, code changes, and technical updates</li>
-                <li><strong>Website:</strong> Major announcements and release notes</li>
-            </ul>
+            <div class="content-section">
+                <h2>Contributing & Community</h2>
 
-            <div class="tip-box" style="margin-top: 48px;">
-                <p style="margin: 0;"><strong>🎯 Need immediate help?</strong> Join our <a href="https://discord.gg/geckoguard" target="_blank" rel="noopener noreferrer" style="color: #92400e; font-weight: 600;">Discord community</a> for the fastest response from our team and community members!</p>
+                <h3>Open Source Contributions</h3>
+                <p>Want to help improve Gecko Guard? We welcome contributions!</p>
+                <ul>
+                    <li><strong>Code contributions:</strong> Submit pull requests on <a href="https://github.com/PrivacyGecko/gecko-guard" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><strong>Documentation:</strong> Improve guides, tutorials, and documentation</li>
+                    <li><strong>Testing:</strong> Test new features and report bugs</li>
+                    <li><strong>Community support:</strong> Help other users in Discord</li>
+                </ul>
+
+                <h3>Stay Connected</h3>
+                <ul>
+                    <li><strong>Discord:</strong> Real-time updates, discussions, and community events</li>
+                    <li><strong>GitHub:</strong> Development roadmap, code changes, and technical updates</li>
+                    <li><strong>Website:</strong> Major announcements and release notes</li>
+                </ul>
+            </div>
+
+            <div class="tip-box">
+                <p style="margin: 0;"><strong>Need immediate help?</strong> Join our <a href="https://discord.gg/geckoguard" target="_blank" rel="noopener noreferrer" style="color: var(--coral-600); font-weight: 600;">Discord community</a> for the fastest response from our team and community members!</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -334,25 +257,26 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="assets/logo/geckoguard-brand.png" alt="GeckoGuard" class="footer-logo">
-                    <p>100% Free. Forever.</p>
+                    <p class="footer-tagline">Open-source stealth protection for your browsing</p>
                 </div>
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="/#features">Features</a>
-                        <a href="/#download">Download</a>
-                        <a href="/guide">User Guide</a>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Product</h4>
+                        <a href="index.html#features" class="footer-link">Features</a>
+                        <a href="index.html#download" class="footer-link">Download</a>
+                        <a href="guide.html" class="footer-link">Installation</a>
+                        <a href="faq.html" class="footer-link">FAQ</a>
                     </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <a href="/faq">FAQ</a>
-                        <a href="/privacy">Privacy</a>
-                        <a href="https://github.com/PrivacyGecko/gecko-guard" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Support</h4>
+                        <a href="https://discord.gg/geckoguard" class="footer-link">Discord</a>
+                        <a href="mailto:contact@privacygecko.com" class="footer-link">Email</a>
+                        <a href="https://github.com/PrivacyGecko/gecko-guard" class="footer-link">GitHub</a>
                     </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="mailto:contact@privacygecko.com">Email</a>
-                        <a href="https://github.com/PrivacyGecko/gecko-guard/issues" target="_blank" rel="noopener noreferrer">Report Bug</a>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Legal</h4>
+                        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
                     </div>
                 </div>
             </div>
@@ -361,5 +285,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

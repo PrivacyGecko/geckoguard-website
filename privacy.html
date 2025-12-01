@@ -8,83 +8,7 @@
     <link rel="icon" type="image/png" href="assets/logo/geckoguard-brand.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .privacy-container {
-            max-width: 800px;
-            margin: 100px auto 60px;
-            padding: 0 24px;
-        }
-        .privacy-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .privacy-title {
-            font-size: 48px;
-            font-weight: 700;
-            color: #0a0a0a;
-            margin-bottom: 16px;
-        }
-        .privacy-updated {
-            color: #666;
-            font-size: 14px;
-        }
-        .privacy-content {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #333;
-            display: block !important;
-        }
-        .privacy-content > * {
-            display: block !important;
-            grid-template-columns: unset !important;
-            width: 100% !important;
-        }
-        .privacy-content h2 {
-            font-size: 28px;
-            font-weight: 700;
-            color: #0a0a0a;
-            margin: 48px 0 24px 0;
-        }
-        .privacy-content h3 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #0a0a0a;
-            margin: 32px 0 16px 0;
-        }
-        .privacy-content p {
-            margin-bottom: 16px;
-        }
-        .privacy-content ul {
-            margin: 16px 0;
-            padding-left: 24px;
-        }
-        .privacy-content li {
-            margin-bottom: 8px;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            color: white;
-            padding: 24px;
-            border-radius: 12px;
-            margin: 32px 0;
-        }
-        .highlight-box h3 {
-            color: white;
-            margin-top: 0;
-        }
-        .back-link {
-            display: inline-block;
-            color: #10b981;
-            text-decoration: none;
-            font-weight: 500;
-            margin-bottom: 24px;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -92,144 +16,164 @@
         <div class="container">
             <div class="nav-content">
                 <div class="nav-brand">
-                    <a href="/">
+                    <a href="index.html">
                         <img src="assets/logo/geckoguard-brand.png" alt="GeckoGuard by PrivacyGecko" class="nav-logo-full">
                     </a>
                 </div>
                 <div class="nav-links">
-                    <a href="/#features" class="nav-link">Features</a>
-                    <a href="/#download" class="nav-link">Download</a>
-                    <a href="/guide.html" class="nav-link">Guide</a>
-                    <a href="/#support" class="nav-link">Support</a>
+                    <a href="index.html#features" class="nav-link">Features</a>
+                    <a href="index.html#download" class="nav-link">Download</a>
+                    <a href="guide.html" class="nav-link">Guide</a>
+                    <a href="index.html#support" class="nav-link">Support</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Privacy Policy Content -->
-    <div class="privacy-container">
-        <a href="/" class="back-link">← Back to Home</a>
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <a href="index.html" class="link" style="display: inline-block; margin-bottom: var(--space-6);">&larr; Back to Home</a>
 
-        <div class="privacy-header">
-            <h1 class="privacy-title">Privacy Policy</h1>
-            <p class="privacy-updated">Last updated: November 16, 2025</p>
-        </div>
+            <div class="page-header">
+                <h1 class="page-title">Privacy Policy</h1>
+                <p class="page-subtitle">Last updated: November 16, 2025</p>
+            </div>
 
-        <div class="privacy-content">
             <div class="highlight-box">
-                <h3>🛡️ Core Principle: We Don't Collect Your Data</h3>
-                <p style="margin: 0;">Gecko Guard is designed with privacy-first principles. We don't track you, collect your data, or send anything to our servers. Everything happens locally on your device.</p>
+                <h3>Core Principle: We Don't Collect Your Data</h3>
+                <p>Gecko Guard is designed with privacy-first principles. We don't track you, collect your data, or send anything to our servers. Everything happens locally on your device.</p>
             </div>
 
-            <h2>Introduction</h2>
-            <p>Gecko Guard ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our browser extension handles your data.</p>
+            <div class="content-section">
+                <h2>Introduction</h2>
+                <p>Gecko Guard ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our browser extension handles your data.</p>
+            </div>
 
-            <h2>What Makes Us Different</h2>
-            <ul>
-                <li>✅ No tracking or analytics</li>
-                <li>✅ No data collection or storage on our servers</li>
-                <li>✅ All processing happens locally on your device</li>
-                <li>✅ No user accounts or registration required</li>
-                <li>✅ 100% open source - verify our claims yourself</li>
-            </ul>
+            <div class="content-section">
+                <h2>What Makes Us Different</h2>
+                <ul>
+                    <li>No tracking or analytics</li>
+                    <li>No data collection or storage on our servers</li>
+                    <li>All processing happens locally on your device</li>
+                    <li>No user accounts or registration required</li>
+                    <li>100% open source - verify our claims yourself</li>
+                </ul>
+            </div>
 
-            <h2>What Data the Extension Accesses</h2>
+            <div class="content-section">
+                <h2>What Data the Extension Accesses</h2>
 
-            <h3>Local Processing Only</h3>
-            <p>The extension accesses certain data to provide privacy protection:</p>
-            <ul>
-                <li><strong>Websites you visit</strong> - To apply blocking rules and protections</li>
-                <li><strong>Cookies on websites</strong> - To categorize and manage them locally</li>
-                <li><strong>Browser fingerprinting attempts</strong> - To detect and block them</li>
-                <li><strong>Network requests</strong> - To block trackers and unwanted content</li>
-            </ul>
+                <h3>Local Processing Only</h3>
+                <p>The extension accesses certain data to provide privacy protection:</p>
+                <ul>
+                    <li><strong>Websites you visit</strong> - To apply blocking rules and protections</li>
+                    <li><strong>Cookies on websites</strong> - To categorize and manage them locally</li>
+                    <li><strong>Browser fingerprinting attempts</strong> - To detect and block them</li>
+                    <li><strong>Network requests</strong> - To block trackers and unwanted content</li>
+                </ul>
 
-            <h3>Data Storage</h3>
-            <p>All data is stored locally on your device:</p>
-            <ul>
-                <li>Privacy settings and preferences</li>
-                <li>Statistics about blocked content</li>
-                <li>Custom rules and whitelists</li>
-                <li>No data is transmitted to our servers</li>
-            </ul>
+                <h3>Data Storage</h3>
+                <p>All data is stored locally on your device:</p>
+                <ul>
+                    <li>Privacy settings and preferences</li>
+                    <li>Statistics about blocked content</li>
+                    <li>Custom rules and whitelists</li>
+                    <li>No data is transmitted to our servers</li>
+                </ul>
+            </div>
 
-            <h2>Permissions Explained</h2>
+            <div class="content-section">
+                <h2>Permissions Explained</h2>
 
-            <h3>Required Browser Permissions</h3>
-            <ul>
-                <li><strong>activeTab</strong> - Read current tab URL to apply protections</li>
-                <li><strong>declarativeNetRequest</strong> - Block unwanted network requests</li>
-                <li><strong>storage</strong> - Save your settings locally</li>
-                <li><strong>scripting</strong> - Inject privacy protection scripts</li>
-            </ul>
+                <h3>Required Browser Permissions</h3>
+                <ul>
+                    <li><strong>activeTab</strong> - Read current tab URL to apply protections</li>
+                    <li><strong>declarativeNetRequest</strong> - Block unwanted network requests</li>
+                    <li><strong>storage</strong> - Save your settings locally</li>
+                    <li><strong>scripting</strong> - Inject privacy protection scripts</li>
+                </ul>
 
-            <h3>Why We Need These Permissions</h3>
-            <p>Each permission is essential for privacy protection and used exclusively for that purpose. We never use permissions for data collection or tracking.</p>
+                <h3>Why We Need These Permissions</h3>
+                <p>Each permission is essential for privacy protection and used exclusively for that purpose. We never use permissions for data collection or tracking.</p>
+            </div>
 
-            <h2>Third-Party Services</h2>
+            <div class="content-section">
+                <h2>Third-Party Services</h2>
 
-            <h3>Current Implementation</h3>
-            <ul>
-                <li>No third-party analytics or tracking services</li>
-                <li>No external API calls for core functionality</li>
-                <li>All features work completely offline</li>
-                <li>No cloud services or remote data storage</li>
-            </ul>
+                <h3>Current Implementation</h3>
+                <ul>
+                    <li>No third-party analytics or tracking services</li>
+                    <li>No external API calls for core functionality</li>
+                    <li>All features work completely offline</li>
+                    <li>No cloud services or remote data storage</li>
+                </ul>
+            </div>
 
-            <h2>Your Control</h2>
+            <div class="content-section">
+                <h2>Your Control</h2>
 
-            <h3>Settings Management</h3>
-            <ul>
-                <li>All settings stored locally on your device</li>
-                <li>Export/import your configuration</li>
-                <li>Reset to defaults at any time</li>
-                <li>Completely remove all data by uninstalling</li>
-            </ul>
+                <h3>Settings Management</h3>
+                <ul>
+                    <li>All settings stored locally on your device</li>
+                    <li>Export/import your configuration</li>
+                    <li>Reset to defaults at any time</li>
+                    <li>Completely remove all data by uninstalling</li>
+                </ul>
 
-            <h3>Transparency</h3>
-            <ul>
-                <li>Open source code on GitHub</li>
-                <li>Open development process</li>
-                <li>Community-driven feature requests</li>
-            </ul>
+                <h3>Transparency</h3>
+                <ul>
+                    <li>Open source code on GitHub</li>
+                    <li>Open development process</li>
+                    <li>Community-driven feature requests</li>
+                </ul>
+            </div>
 
-            <h2>Data Security</h2>
+            <div class="content-section">
+                <h2>Data Security</h2>
 
-            <h3>Local Security</h3>
-            <ul>
-                <li>Extension follows browser security best practices</li>
-                <li>No remote code execution</li>
-                <li>Secure local storage encryption</li>
-                <li>Regular security updates</li>
-            </ul>
+                <h3>Local Security</h3>
+                <ul>
+                    <li>Extension follows browser security best practices</li>
+                    <li>No remote code execution</li>
+                    <li>Secure local storage encryption</li>
+                    <li>Regular security updates</li>
+                </ul>
 
-            <h3>No Data Breaches Possible</h3>
-            <p>Since we don't collect or store your data on our servers, there's nothing to breach. Your data stays on your device.</p>
+                <h3>No Data Breaches Possible</h3>
+                <p>Since we don't collect or store your data on our servers, there's nothing to breach. Your data stays on your device.</p>
+            </div>
 
-            <h2>Open Source Commitment</h2>
-            <p>As an open-source project:</p>
-            <ul>
-                <li>Our code is publicly auditable on GitHub</li>
-                <li>Community can verify our privacy claims</li>
-                <li>No hidden data collection mechanisms</li>
-                <li>Regular security audits and transparency reports</li>
-            </ul>
+            <div class="content-section">
+                <h2>Open Source Commitment</h2>
+                <p>As an open-source project:</p>
+                <ul>
+                    <li>Our code is publicly auditable on GitHub</li>
+                    <li>Community can verify our privacy claims</li>
+                    <li>No hidden data collection mechanisms</li>
+                    <li>Regular security audits and transparency reports</li>
+                </ul>
+            </div>
 
-            <h2>Changes to Privacy Policy</h2>
-            <p>We will update this policy if our data practices change. Any updates will be posted here with a new "last updated" date.</p>
+            <div class="content-section">
+                <h2>Changes to Privacy Policy</h2>
+                <p>We will update this policy if our data practices change. Any updates will be posted here with a new "last updated" date.</p>
+            </div>
 
-            <h2>Contact Us</h2>
-            <p>Questions about privacy? Contact us:</p>
-            <ul>
-                <li><strong>Email:</strong> contact@privacygecko.com</li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/PrivacyGecko/gecko-guard/issues" target="_blank" rel="noopener noreferrer">Report Issues</a></li>
-            </ul>
+            <div class="content-section">
+                <h2>Contact Us</h2>
+                <p>Questions about privacy? Contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> contact@privacygecko.com</li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/PrivacyGecko/gecko-guard/issues" target="_blank" rel="noopener noreferrer">Report Issues</a></li>
+                </ul>
+            </div>
 
-            <div class="highlight-box" style="margin-top: 48px;">
-                <p style="margin: 0; font-size: 18px; font-weight: 600;">Remember: The best privacy policy is no data collection at all. That's our commitment to you.</p>
+            <div class="highlight-box">
+                <p style="margin: 0; font-weight: 600;">Remember: The best privacy policy is no data collection at all. That's our commitment to you.</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -237,25 +181,26 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="assets/logo/geckoguard-brand.png" alt="GeckoGuard" class="footer-logo">
-                    <p>100% Free. Forever.</p>
+                    <p class="footer-tagline">Open-source stealth protection for your browsing</p>
                 </div>
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="/#features">Features</a>
-                        <a href="/#download">Download</a>
-                        <a href="/guide">User Guide</a>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Product</h4>
+                        <a href="index.html#features" class="footer-link">Features</a>
+                        <a href="index.html#download" class="footer-link">Download</a>
+                        <a href="guide.html" class="footer-link">Installation</a>
+                        <a href="faq.html" class="footer-link">FAQ</a>
                     </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <a href="/faq.html">FAQ</a>
-                        <a href="/privacy.html">Privacy</a>
-                        <a href="https://github.com/PrivacyGecko/gecko-guard" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Support</h4>
+                        <a href="https://discord.gg/geckoguard" class="footer-link">Discord</a>
+                        <a href="mailto:contact@privacygecko.com" class="footer-link">Email</a>
+                        <a href="https://github.com/PrivacyGecko/gecko-guard" class="footer-link">GitHub</a>
                     </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="mailto:contact@privacygecko.com">Email</a>
-                        <a href="https://github.com/PrivacyGecko/gecko-guard/issues" target="_blank" rel="noopener noreferrer">Report Bug</a>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Legal</h4>
+                        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
                     </div>
                 </div>
             </div>
@@ -264,5 +209,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
